@@ -786,6 +786,14 @@ section {
 /*--------------------------------------------------------------
 # Photo Gallery
 --------------------------------------------------------------*/
+.history-img {
+  background-image: url("../img/history.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 140vh
+}
+
 .photo .photo-item {
   margin-bottom: 30px;
 }
