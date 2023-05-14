@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: #f4f4f4;
+  background-color: #F7EBE8;
 }
 
 a {
@@ -51,7 +51,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #124ac2;
+  background: #444140; 
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -65,7 +65,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc08e;
+  background: #E54B4B;
   color: #fff;
 }
 
@@ -456,7 +456,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #124ac2;
+  color: #E54B4B;
   position: relative;
   z-index: 2;
 }
@@ -1708,7 +1708,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #4eb478;
+  background: #CBA328;
   color: #fff;
   text-decoration: none;
 }
@@ -1722,4 +1722,75 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
+}
+
+
+
+
+
+/* Fancy Cards */
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #CBA328;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: 2px;
+  margin-right: -4px;
+  color: black;
+  font-family: courier, sans;
+  font-size: 24px;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  /* background: #FFA987; */
+  background: #CBA328;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform .5s ease-out;
+}
+.card1:hover:before {
+  transform: scale(90);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  /* color: rgba(255, 255, 255, 0.8); */
+}
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  /* color: #ffffff; */
+}
+
+.overwrite-color:hover {
+    color: #E54B4B !important;
 }
