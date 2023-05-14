@@ -451,7 +451,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -774,6 +774,8 @@ section {
 .services .icon-box .icon-box:hover h4 a {
   color: #124ac2;
 }
+
+
 
 .services .icon-box p {
   margin-left: 70px;
