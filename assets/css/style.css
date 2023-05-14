@@ -395,13 +395,13 @@ h6 {
   padding: 10px 28px;
   border-radius: 5px;
   transition: 0.5s;
-  border: 2px solid #124ac2;
+  border: 2px solid #E54B4B;
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #124ac2;
-  border: 2px solid #124ac2;
+  background: #E54B4B;
+  border: 2px solid #ce4343;
 }
 
 @media (min-width: 1024px) {
@@ -521,8 +521,9 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
 }
+
 
 .about .content .icon-box p {
   font-size: 15px;
@@ -703,7 +704,6 @@ section {
 
 .divisions .icon-box {
   cursor: pointer;
-  margin-bottom: 20px;
   padding: 30px 15px;
   border-radius: 6px;
   background: #fff;
@@ -711,7 +711,7 @@ section {
 
 .divisions .icon-box i {
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
   font-size: 40px;
   line-height: 0;
 }
@@ -754,7 +754,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
   font-size: 40px;
   line-height: 0;
 }
@@ -1396,7 +1396,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #124ac2;
+  color: #E54B4B;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #cbe9d8;
@@ -1438,7 +1438,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #124ac2;
+  background: #E54B4B;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1484,7 +1484,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #124ac2;
+  background: #E54B4B;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1493,7 +1493,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #124ac2;
+  background: #444140;
 }
 
 @keyframes animate-loading {
@@ -1795,4 +1795,15 @@ section {
 
 .overwrite-color:hover {
     color: #E54B4B !important;
+}
+
+ .pdf-box i {
+  color: #E54B4B;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.pointer{
+  cursor: pointer;
 }
