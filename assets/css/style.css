@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: #f4f4f4;
+  background-color: #F7EBE8;
 }
 
 a {
@@ -51,7 +51,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #124ac2;
+  background: #444140; 
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -65,7 +65,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc08e;
+  background: #E54B4B;
   color: #fff;
 }
 
@@ -395,13 +395,13 @@ h6 {
   padding: 10px 28px;
   border-radius: 5px;
   transition: 0.5s;
-  border: 2px solid #124ac2;
+  border: 2px solid #E54B4B;
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #124ac2;
-  border: 2px solid #124ac2;
+  background: #E54B4B;
+  border: 2px solid #ce4343;
 }
 
 @media (min-width: 1024px) {
@@ -451,12 +451,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #124ac2;
+  color: #E54B4B;
   position: relative;
   z-index: 2;
 }
@@ -494,9 +494,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content {
+/* .about .content {
   padding-left: 30px;
-}
+} */
 
 .about .content h3 {
   font-weight: 700;
@@ -508,7 +508,7 @@ section {
 }
 
 .about .content .icon-box {
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: 25px;
 }
 
@@ -521,8 +521,9 @@ section {
 .about .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
 }
+
 
 .about .content .icon-box p {
   font-size: 15px;
@@ -533,8 +534,8 @@ section {
 .about .image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
+  background-size: contain;
+  min-height: 80vh;
 }
 
 @media (max-width: 991px) {
@@ -703,7 +704,6 @@ section {
 
 .divisions .icon-box {
   cursor: pointer;
-  margin-bottom: 20px;
   padding: 30px 15px;
   border-radius: 6px;
   background: #fff;
@@ -711,7 +711,7 @@ section {
 
 .divisions .icon-box i {
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
   font-size: 40px;
   line-height: 0;
 }
@@ -754,7 +754,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #124ac2;
+  color: #E54B4B;
   font-size: 40px;
   line-height: 0;
 }
@@ -775,6 +775,8 @@ section {
   color: #124ac2;
 }
 
+
+
 .services .icon-box p {
   margin-left: 70px;
   line-height: 24px;
@@ -784,6 +786,14 @@ section {
 /*--------------------------------------------------------------
 # Photo Gallery
 --------------------------------------------------------------*/
+.history-img {
+  background-image: url("../img/history.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 140vh
+}
+
 .photo .photo-item {
   margin-bottom: 30px;
 }
@@ -1394,7 +1404,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #124ac2;
+  color: #E54B4B;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #cbe9d8;
@@ -1436,7 +1446,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #124ac2;
+  background: #E54B4B;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1482,7 +1492,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #124ac2;
+  background: #E54B4B;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1491,7 +1501,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #124ac2;
+  background: #444140;
 }
 
 @keyframes animate-loading {
@@ -1708,7 +1718,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #4eb478;
+  background: #CBA328;
   color: #fff;
   text-decoration: none;
 }
@@ -1722,4 +1732,90 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
+}
+
+
+
+
+
+/* Fancy Cards */
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #CBA328;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: 2px;
+  margin-right: -4px;
+  color: black;
+  font-family: courier, sans;
+  font-size: 24px;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  /* background: #FFA987; */
+  background: #CBA328;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform .5s ease-out;
+}
+.card1:hover:before {
+  transform: scale(90);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  /* color: rgba(255, 255, 255, 0.8); */
+}
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  /* color: #ffffff; */
+}
+
+.overwrite-color:hover {
+    color: #E54B4B !important;
+}
+
+ .pdf-box i {
+  color: #E54B4B;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.blue{
+  color: #124ac2 !important;
 }
