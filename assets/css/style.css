@@ -20,9 +20,22 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #476bb9;
+a.contact-link {
+  color: #fff
+}
+
+a.contact-link:hover {
+  color: #124ac2;
   text-decoration: none;
+}
+
+a:hover {
+  color: rgba(43, 43, 43, 0.9);
+  text-decoration: none;
+}
+
+a.no-style{
+  color: #fff !important;
 }
 
 h1,
@@ -35,10 +48,14 @@ h6 {
 }
 
 .wrap {
-  max-width: 1440px;
+  max-width: 1700px;
   margin: auto;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container {
+  height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -54,7 +71,6 @@ h6 {
   background: #444140; 
   width: 40px;
   height: 40px;
-  border-radius: 4px;
   transition: all 0.4s;
 }
 
@@ -342,10 +358,22 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   border-bottom: 1px solid #222;
+}
+
+.main-hero {
+  background: url("../img/hero.jpg") top center;
+}
+
+.nfpd-info {
+  background: url("../img/nfpdinfo.jpg") top center;
+  background-position: center;
+}
+
+.nfpd-about {
+  background: url("../img//photo/Website4.JPG");
 }
 
 #hero:before {
@@ -386,20 +414,19 @@ h6 {
   font-size: 22px;
 }
 
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
   display: inline-block;
   padding: 10px 28px;
-  border-radius: 5px;
   transition: 0.5s;
   border: 2px solid #E54B4B;
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
   background: #E54B4B;
   border: 2px solid #ce4343;
 }
@@ -417,7 +444,11 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: 25vh;
+  }
+
+  .main-hero {
+    height: 100vh !important;
   }
 
   #hero h1 {
@@ -596,7 +627,6 @@ section {
 # Stations
 --------------------------------------------------------------*/
 .stations .card {
-  border-radius: 5px;
   overflow: hidden;
   border: 0;
   background: #f7f7f7;
@@ -678,7 +708,6 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 5px;
   transition: 0.3s;
   margin-top: 10px;
   border: 2px solid #fff;
@@ -705,7 +734,6 @@ section {
 .divisions .icon-box {
   cursor: pointer;
   padding: 30px 15px;
-  border-radius: 6px;
   background: #fff;
 }
 
@@ -748,7 +776,6 @@ section {
 .services .icon-box {
   margin-bottom: 20px;
   padding: 30px 15px;
-  border-radius: 6px;
   background: #fff;
 }
 
@@ -794,6 +821,28 @@ section {
   height: 140vh
 }
 
+.photo-item {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.photo-item > img {
+  max-width: 100%;
+  display: block;
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.photo-container {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1rem 3rem;
+   grid-template-rows: masonry;
+}
+
 .photo .photo-item {
   margin-bottom: 30px;
 }
@@ -803,7 +852,6 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  border-radius: 50px;
   padding: 2px 15px;
 }
 
@@ -1011,7 +1059,6 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
@@ -1094,7 +1141,6 @@ section {
   background: #343a40;
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
 }
 
 .team .member .member-info {
@@ -1155,18 +1201,18 @@ section {
   margin: 0 2px;
 }
 
-.team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+.team .member .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 90%);
   opacity: 1;
   transition: 0.4s;
 }
 
-.team .member:hover .member-info-content {
+.team .member .member-info-content {
   bottom: 60px;
   transition: bottom 0.4s;
 }
 
-.team .member:hover .social {
+.team .member .social {
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
 }
@@ -1239,7 +1285,6 @@ section {
 .pricing .get-started-btn {
   display: inline-block;
   padding: 8px 30px;
-  border-radius: 5px;
   color: #444444;
   transition: none;
   font-size: 15px;
@@ -1330,7 +1375,6 @@ section {
 .faq .faq-list li {
   padding: 20px;
   background: #fff;
-  border-radius: 4px;
   position: relative;
 }
 
@@ -1405,7 +1449,6 @@ section {
 .contact .info-box i {
   font-size: 32px;
   color: #E54B4B;
-  border-radius: 50%;
   padding: 8px;
   border: 2px dotted #cbe9d8;
   float: left;
@@ -1497,7 +1540,6 @@ section {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -1599,7 +1641,6 @@ section {
   background: #fff;
   padding: 6px 10px;
   position: relative;
-  border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
@@ -1622,7 +1663,6 @@ section {
   background: #124ac2;
   color: #fff;
   transition: 0.3s;
-  border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1765,7 +1805,6 @@ section {
   display: block;
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 4px;
   padding: 32px 24px;
   margin: 12px;
   text-decoration: none;
@@ -1819,3 +1858,23 @@ section {
 .blue{
   color: #124ac2 !important;
 }
+
+
+.offcanvas-body::-webkit-scrollbar {
+           display: none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        body::-webkit-scrollbar-track {
+            border-radius: 8px;
+            background-color: #e7e7e7;
+            border: 1px solid #cacaca;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #E54B4B;
+        }

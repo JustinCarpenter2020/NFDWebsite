@@ -40,7 +40,7 @@
   <div class="wrap">
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <section id="hero" class="main-hero">
       <div class="hero-container" data-aos="fade-up">
         <h1>Nampa Fire Protection District</h1>
         <h2>Honorably serving our community with prompt, professional, and safe service</h2>
@@ -50,17 +50,14 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-
-
+      <div class="container d-flex align-items-center justify-content-around">
         <nav id="navbar" class="navbar d-none d-md-block">
           <ul>
             <li><a class="nav-link overwrite-color" href="#hero">Home</a></li>
             <li><a class="nav-link overwrite-color" href="#about">NFPD Overview</a></li>
             <li><a class="nav-link overwrite-color" href="#permits">Permits & Applications</a></li>
-            <li><a class="nav-link overwrite-color" href="#photo">Community Outreach</a></li>
-            <li><a class="nav-link overwrite-color" href="#about">Public Resources</a></li>
-            <li><a class="nav-link overwrite-color" href="#faq">FAQ</a></li>
+            <li><a class="nav-link overwrite-color" href="#publicResources">Public Resources</a></li>
+            <li><a class="nav-link overwrite-color" href="#communityOutreach">Community Outreach</a></li>
             <li><a class="nav-link overwrite-color" href="#contact">Contact</a></li>   
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -71,20 +68,20 @@
 
     <main id="main">
 
-      <!-- ======= Divisions Section ======= -->
+      <!-- ======= NFPD Overview Section ======= -->
       <section id="about" class="divisions">
         <div class="container">
       
           <div class="section-title" data-aos="fade-down">
             <!-- <span>About Nampa Fire</span> -->
-            <h2>Nampa Fire Protection District Overview</h2>
+            <h2>NFPD Overview</h2>
           </div>
       
           <div class="row">
 
 
             <div class="col-md-12 text-center">
-                <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#districtOffCanvas">
+                <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#informationOffCanvas">
                   <h3>NFD Information</h3>
                   <p class="small">Sections to include About NFPD, History of NFPD & Meet the Chief</p>
                   <div class="go-corner" href="#">
@@ -95,43 +92,271 @@
                 </div>
             </div>
 
-            <!-- Begin distict Off Canvas -->
-          <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="districtOffCanvas" aria-labelledby="offcanvasLabel">
-            <div class="offcanvas-header">
-              <h1 class="offcanvas-title text-center" id="offcanvasLabel">Nampa Fire Protection District</h1>
+            <!-- Begin information Off Canvas -->
+          <div class="offcanvas offcanvas-end w-100" data-bs-backdrop="static" tabindex="-1" id="informationOffCanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+              <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#informationOffCanvas"></i></h3>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <div class="row justify-content-center mb-4">
 
-                 <div class="section-title" >
-                    <span>History of Nampa Fire</span>
-                    <h2>History of Nampa Fire</h2>
+                 <section id="hero" class="nfpd-info mb-5">
+                  <div class="hero-container">
+                    <h1>NFPD Information</h1>
+                  </div>
+                  </section>
+
+                  <div class="row justify-content-center">
+
+                    <div class="col-xs-12 col-md-8 text-center ">
+                      <div class="card1" data-bs-toggle="offcanvas" data-bs-target="#aboutOffCanvas">
+                        <h3>About NFPD</h3>
+                        <div class="go-corner" href="#">
+                          <div class="go-arrow">
+                            <i class="bx bx-right-arrow-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="col-12 history-img" >
+                  <div class="row justify-content-center">
+
+                    <div class="col-xs-12 col-md-8 text-center ">
+                      <div class="card1" data-bs-toggle="offcanvas" data-bs-target="#historyOffCanvas">
+                        <h3>History of NFPD</h3>
+                        <div class="go-corner" href="#">
+                          <div class="go-arrow">
+                            <i class="bx bx-right-arrow-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center">
+
+                    <div class="col-xs-12 col-md-8 text-center">
+                      <div class="card1" data-bs-toggle="offcanvas" data-bs-target="#chiefOffCanvas">
+                        <h3>Meet Chief Carpenter</h3>
+                        <div class="go-corner" href="#">
+                          <div class="go-arrow">
+                            <i class="bx bx-right-arrow-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Begin About Offcanvas -->
+            <div class="offcanvas offcanvas-end w-100" data-bs-backdrop="static" tabindex="-1" id="aboutOffCanvas" aria-labelledby="About NFPD Offcanvas">
+              <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#informationOffCanvas"></i></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <section id="hero" class="nfpd-about mb-5">
+                  <div class="hero-container">
+                    <h1>About NFPD</h1>
+                  </div>
+                  </section>
+
+                  <div class="row justify-content-center">
+                    <div class="col-md-8">
+                      <div>
+                        <div class="text-center border-bottom border-dark border-opacity-25">
+                          <p class="fs-2">
+                            The Nampa Fire Protection District operates under the vision of: <br>
+                            <strong> Excellence - Service - Strength in Unity</strong> <br>
+                            and through the core values of: <br>
+                            <strong>Teamwork, Integrity, Compassion, Professionalism, and Safety</strong>
+                          </p>
+                        </div>
+                        <div>
+                          <ul>
+                            <li class="my-3 my-md-1">
+                              The Nampa Fire Protection District (NFPD) provides service to an area of approximately 100 sq. miles and 125,000 citizens.<br>
+                              Our service is a mix of urban, suburban, industrial and rural zones.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Currently, NFPD has 110 personnel working out of 5 fire statiuons, a training division, and the administrative office.<br>
+                              Our frontline response apparatus includes 4 Type 1 fire engines, a 100' aerial platform truck, a 75' ladder truck company, a squad, a Type 5 bush rig , and a technical rescue team.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Nampa Fire is an all-hazards department frequently responding to medical emergencies, structure fires, vehicle extrication, wildland fires, hazardous material incidents, and technical rescue emergencies.<br>
+                              Line persoonnel are trained to operations level in all areas.<br>
+                              Many members achieve technician and/or instructor certifications in the various emergency response ddisciplines.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Nampa Fire is a proud member of the Treasure Valley Emergency Medical Services System (TVEMSS).<br>
+                              The TVEMSS is a collective agreement plan providing a unified and central medical direction, along with common Standing Written Orders for several area EMS agencies.<br>
+                              NFPD delivers high quality Advanced Life Support medical care provid8ing a certified paramedic on every fire engine.<br>
+                              Exceptional critical care transportation is provided by our parters Canyon County Paramedics.<br>
+                              NFPD and CCP work closely together to ensure that the citizens in our area receive the highest level of quality care possible.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              We celebrate the exceptional training facility that we have here in Nampa.<br>
+                              In addition, Nampa Fire enjoys the benefit of having a high performing dedicated training staff that provides our personnel outstanding education resulting in a culture of excellence and professionalism.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              The Nampa Firefighters Local 804 has a deep tradition of service in our community as well as an unrelenting commitment to its members.<br>
+                              The Nampa Fire Administration and the Local 804 strive to be a model of collaboration, sharing a vision that results in the delivery of the best possible service to our citizens.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            
+              <!-- Begin History Offcanvas -->
+            <div class="offcanvas offcanvas-end w-100" data-bs-backdrop="static" tabindex="-1" id="historyOffCanvas" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+              <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#informationOffCanvas"></i></h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+
+               <div class="row justify-content-center">
+                    <div class="col-md-8">
+                      <div>
+                        <div class="text-center border-bottom border-dark border-opacity-25">
+                          <p class="fs-2">
+                            The Nampa Fire Protection District operates under the vision of: <br>
+                            <strong> Excellence - Service - Strength in Unity</strong> <br>
+                            and through the core values of: <br>
+                            <strong>Teamwork, Integrity, Compassion, Professionalism, and Safety</strong>
+                          </p>
+                        </div>
+                        <div>
+                          <ul>
+                            <li class="my-3 my-md-1">
+                              The Nampa Fire Protection District (NFPD) provides service to an area of approximately 100 sq. miles and 125,000 citizens.<br>
+                              Our service is a mix of urban, suburban, industrial and rural zones.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Currently, NFPD has 110 personnel working out of 5 fire statiuons, a training division, and the administrative office.<br>
+                              Our frontline response apparatus includes 4 Type 1 fire engines, a 100' aerial platform truck, a 75' ladder truck company, a squad, a Type 5 bush rig , and a technical rescue team.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Nampa Fire is an all-hazards department frequently responding to medical emergencies, structure fires, vehicle extrication, wildland fires, hazardous material incidents, and technical rescue emergencies.<br>
+                              Line persoonnel are trained to operations level in all areas.<br>
+                              Many members achieve technician and/or instructor certifications in the various emergency response ddisciplines.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              Nampa Fire is a proud member of the Treasure Valley Emergency Medical Services System (TVEMSS).<br>
+                              The TVEMSS is a collective agreement plan providing a unified and central medical direction, along with common Standing Written Orders for several area EMS agencies.<br>
+                              NFPD delivers high quality Advanced Life Support medical care provid8ing a certified paramedic on every fire engine.<br>
+                              Exceptional critical care transportation is provided by our parters Canyon County Paramedics.<br>
+                              NFPD and CCP work closely together to ensure that the citizens in our area receive the highest level of quality care possible.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              We celebrate the exceptional training facility that we have here in Nampa.<br>
+                              In addition, Nampa Fire enjoys the benefit of having a high performing dedicated training staff that provides our personnel outstanding education resulting in a culture of excellence and professionalism.
+                            </li>
+                            <li class="my-3 my-md-1">
+                              The Nampa Firefighters Local 804 has a deep tradition of service in our community as well as an unrelenting commitment to its members.<br>
+                              The Nampa Fire Administration and the Local 804 strive to be a model of collaboration, sharing a vision that results in the delivery of the best possible service to our citizens.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                   <section id="cta" class="cta">
+                      <div class="container">
+
+                        <div class="text-center">
+                          <a class="btn-get-started" href="./assets/img/history.png">Learn More About the History of Nampa Fire</a>
+                        </div>
+                      </div>
+                    </section>
+
+
+                    <div class="row justify-content-center mt-5 ">
+                    <div class="col-md-8">
+                      <div>
+                       <iframe class="w-100 iframe-container"
+                  src="https://www.youtube.com/embed/v3f7TKsrw80">
+                </iframe>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+            </div>
+
+            <!-- Begin Chief Offcanvas  -->              
+              <div class="offcanvas offcanvas-end w-100" data-bs-backdrop="static" tabindex="-1" id="chiefOffCanvas" aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#informationOffCanvas"></i></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-12 col-md-3">
+                    <img src="./assets/img/ChiefCarpenter.jpeg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-5">
+                    <div class="mb-5">
+                      <p class="fs-1">Chief Carpenter has dedicated his life to the fire service and began working at NFPD in 1998.</p>
+                    </div>
+                    <section id="cta" class="cta">
+                      <div class="container">
+                        <div class="text-center">
+                          <a class="btn-get-started" href="./assets/pdfs/ChiefCarpenterPhilosophy.pdf">See the Chief's philosophy</a>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
                 <div class="row justify-content-center">
-
-                  
-                  <div class="section-title" >
-                    <span>About The Annexation</span>
-                    <h2>About The Annexation</h2>
+                  <div class=" p-2 my-5 col-md-8">
+                    <div class="text-center">
+                      <h4>Listen / Learn / Lead </h4>
+                    </div>
+                    <div >
+                      <p>My personal leadership philosophy is based on the core value of integrity and the "Platinum Rule".
+                        I believe that when I do the right things for the right reasons and treat others even better than the way I wish to be treated, it will establish trust, commitment, and connection with those around me.
+                        I believe sharing my personal leadership philosophy will help our members develop and understanding of what i expect from them -- and create a framework from which
+                        you can hold me accountable. Above all, I believe following these priciples will allow me to positively impact the lives of those around me. My leadership philosophy is a living document
+                        which continues to develop as I learn and grow. I will be sure to revisit this philosophy often an update the members of our distric when changes are made.</p>
+                      </div>
+                    </div>
+                    <div class=" p-2 mb-5 col-md-8">
+                      <div class=" text-center">
+                        <h4>Personal Standards</h4>
+                      </div>
+                      <div >
+                        <p>I wil earn credibility by putting my utmost attention and efforts towards the positive growth of the department while keeping
+                          my families well-being and health the highest priority. I will approach my days with an optimistic outlook and positive attitude.
+                          Those around me have approval to remind me when there is not a smile on my face. We have the best job in the world, and I want to enjoy it
+                          and have that respresented in both my verbal and non-verbal communication. I will set achievable and measure goals for myself and my team
+                          members. I will express gratitude and acknowledge efforts that contribute to the progress of our department. Lead by example by making sure my
+                          actions are aligned with the districts Mission Statement and Core Values. I will find ways to create opportunity and a positive working environment.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  
-                  
-                  <iframe height="500"
-                  src="https://www.youtube.com/embed/v3f7TKsrw80">
-                </iframe>
-                
+                </div>
               </div>
-
-           
-
- 
-            </div>
-          </div>
 
 
 
@@ -146,27 +371,122 @@
               </div>
             </div>
           </div>
+
+          <!-- Begin Command Contact Offcanvas -->
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="commandContactOffCanvas" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+              <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#commandOffCanvas"></i></h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+              I will not close if you click outside of me.
+              </div>
+            </div>
+            </div>
           
           <!-- Begin Command Structure Off Canvas  -->
-            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="commandOffCanvas" aria-labelledby="offcanvasLabel">
-              <div class="offcanvas-header">
-                <h1 class="offcanvas-title text-center" id="offcanvasLabel">Command Structure</h1>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                 <!-- ======= Team Section ======= -->
-        <section id="admin" class="team">
+          <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="commandOffCanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+              <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#commandOffCanvas"></i></h3>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- ======= Commissioners Section ======= -->
+        <section id="commissioners" class="team">
+        <div class="container">
+        
+        <div class="section-title">
+         <h2>Commissioners</h2>
+         <p>The NFPD Board of Commissioners is an elected oversight governing board that meets monthly.</p>
+         <button class="btn btn-danger rounded-0 mt-1" data-bs-toggle="offcanvas" data-bs-target="#commissionerOffcanvas">Meeting Details</button>
+        </div>
+        
+        <div class="row justify-content-center">
+        
+         <div class="col-xl-3 col-lg-4 col-md-6">
+           <div class="member">
+             <img src="assets/img/team/commissioners/NicholasChan(Commissioner).jpg" class="img-fluid" alt="">
+             <div class="member-info">
+               <div class="member-info-content">
+                 <h4>Nicholas Chan</h4>
+                 <span>Commissioner</span>
+               </div>
+             </div>
+           </div>
+         </div>
+        
+         <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+           <div class="member">
+             <img src="assets/img/team/commissioners/CleoMiller(Commissioner).jpg" class="img-fluid" alt="">
+             <div class="member-info">
+               <div class="member-info-content">
+                 <h4>Cleo Miller</h4>
+                 <span>Commissioner</span>
+               </div>
+             </div>
+           </div>
+         </div>
+        
+         <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
+           <div class="member">
+             <img src="assets/img/team/commissioners/FrankWolfkiel(Commissioner).jpg" class="img-fluid" alt="">
+             <div class="member-info">
+               <div class="member-info-content">
+                 <h4>Frank Wolfkiel</h4>
+                 <span>Commissioner</span>
+               </div>
+             </div>
+           </div>
+         </div>
+        
+         <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
+           <div class="member">
+             <img src="assets/img/team/commissioners/DanielRyan(Commissioner).jpg" class="img-fluid" alt="">
+             <div class="member-info">
+               <div class="member-info-content">
+                 <h4>Daniel Ryan</h4>
+                 <span>Commissioner</span>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-3">
+           <div class="member">
+             <img src="assets/img/team/commissioners/PaulJones(Commissioner).jpg" class="img-fluid" alt="">
+             <div class="member-info">
+               <div class="member-info-content">
+                 <h4>Paul Jones</h4>
+                 <span>Commissioner</span>
+               </div>
+             </div>
+           </div>
+         </div>
+        
+        </div>
+        
+        </div>
+        </section>
+        <!-- End Commissioners Section -->
+
+
+                 <!-- ======= Command Section ======= -->
+        <section id="command" class="team">
         <div class="container">
 
           <div class="section-title">
-            <span>Admin and Chiefs</span>
-            <h2>Admin and Chiefs</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+            <h2>NFPD Command</h2>
+            <p>To contact a chief please<br>
+            Call NFPD Administration <a href=“tel:208-468-5770”>208-468-5770</a> & leave a message indicating which Chief you would like to speak to.<br>
+            </p>
+            <button class="btn btn-danger rounded-0 mt-1"><a class="no-style" href="mailto:admin@nampafire.org">Or send us an Email</a></button>
           </div>
 
           <div class="row justify-content-center">
             
-            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member" >
                 <img src="assets/img/team/admin/KirkCarpenter2(Chief).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -190,7 +510,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member">
                 <img src="assets/img/team/admin/NickAdams(DeputyChiefofLogistics).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -202,7 +522,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member" >
                 <img src="assets/img/team/admin/RonJohnson(DeputyChiefFireMarshal).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -214,7 +534,7 @@
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-3">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4">
               <div class="member">
                 <img src="assets/img/team/admin/RobertJardine(DivisionChiefofTraining).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -225,7 +545,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-3">
+
+            <div class="col-xl-3 col-lg-4 mt-4 col-md-6 mt-4">
               <div class="member">
                 <img src="assets/img/team/admin/TomWright(DivisionChiefofEMS).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -240,107 +561,59 @@
           </div>
 
         </div>
-        </section><!-- End Team Section -->
-                   <!-- ======= Team Section ======= -->
-        <section id="commissioners" class="team">
-        <div class="container">
-
-          <div class="section-title">
-            <span>Commissioners</span>
-            <h2>Commissioners</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-          </div>
-
-          <div class="row justify-content-center">
-
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="member">
-                <img src="assets/img/team/commissioners/NicholasChan(Commissioner).jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Nicholas Chan</h4>
-                    <span>Commissioner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
-              <div class="member">
-                <img src="assets/img/team/commissioners/CleoMiller(Commissioner).jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Cleo Miller</h4>
-                    <span>Commissioner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div class="member">
-                <img src="assets/img/team/commissioners/FrankWolfkiel(Commissioner).jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Frank Wolfkiel</h4>
-                    <span>Commissioner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div class="member">
-                <img src="assets/img/team/commissioners/DanielRyan(Commissioner).jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Daniel Ryan</h4>
-                    <span>Commissioner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-3">
-              <div class="member">
-                <img src="assets/img/team/commissioners/PaulJones(Commissioner).jpg" class="img-fluid" alt="">
-                <div class="member-info">
-                  <div class="member-info-content">
-                    <h4>Paul Jones</h4>
-                    <span>Commissioner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        </section><!-- End Team Section -->
+        </section>
+        <!-- End Command Section -->
       
-       <!-- ======= Team Section ======= -->
+       <!-- ======= Prevention Section ======= -->
         <section id="Prevention" class="team">
         <div class="container">
 
           <div class="section-title">
-            <span>Prevention Bureau</span>
             <h2>Prevention Bureau</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+            <p>The Prevention Bureau main phone number is <a href=“tel:208-468-4751”>208-468-4751</a></p>
           </div>
-
-          <div class="row">
-
-            <div class="col-xl-3 col-lg-4 col-md-6">
+          
+          <div class="row justify-content-center">
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member" >
                 <img src="assets/img/team/admin/RonJohnson(DeputyChiefFireMarshal).jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Ron Johnson</h4>
                     <span>Deputy Chief Fire Marshal</span>
+                    <span>
+                      <br>
+                      <br>
+                      <br>
+                    </span>
                   </div>
                 </div>
               </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <a class="btn-primary pointer me-2" href=“tel:208-468-5760”>208-468-5760</a>
+                <button class="btn btn-danger btn-sm rounded-0">Email Ron</button>
+              </div>
             </div>
 
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0" >
+              <div class="member">
+                <img src="assets/img/team/prevention/RobJohnson(DeputyFIreMarshal).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Ron Johnson</h4>
+                    <span>Deputy Fire Marshal</span>
+                    <span>-</span>
+                    <span>Fire Inspector, Fire & Life Safety Plan Examiner, Conceptual Plan Reviewer.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <a class="btn-primary pointer me-2" href=“tel:208-468-5757”>208-468-5757</a>
+                <button class="btn btn-danger rounded-0 btn-sm">Email Rob</button>
+              </div>
+            </div>
+            
             <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member">
                 <img src="assets/img/team/prevention/MarkStrom(DeputyFIreMarshal).jpg" class="img-fluid" alt="">
@@ -348,53 +621,89 @@
                   <div class="member-info-content">
                     <h4>Mark Strom</h4>
                     <span>Deputy Fire Marshal</span>
+                     <span>-</span>
+                    <span>Fire Inspector & Investigator, Special Investigator</span>
+                    <span><br></span>
                   </div>
                 </div>
               </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <a class="btn-primary pointer me-2" href=“tel:208-468-5750”>208-468-5750</a>
+                <button class="btn btn-danger rounded-0 btn-sm">Email Mark</button>
+              </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member" >
                 <img src="assets/img/team/prevention/MelissaClose(DeputyFIreMarshal).jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Melissa Close</h4>
                     <span>Deputy Fire Marshal</span>
+                    <span>-</span>
+                    <span>Fire Inspector, Community Outreach, School & Licensed Care Facility Contact</span>
                   </div>
                 </div>
+              </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <a class="btn-primary pointer me-2" href=“tel:208-468-5766”>208-468-5766</a>
+                <button class="btn btn-danger rounded-0 btn-sm">Email Melissa</button>
               </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" >
-              <div class="member">
-                <img src="assets/img/team/prevention/RobJohnson(DeputyFIreMarshal).jpg" class="img-fluid" alt="">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-4">
+              <div class="member" >
+                <img src="assets/img/team/prevention/MelissaClose(DeputyFIreMarshal).jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
-                    <h4>Ron Johnson</h4>
+                    <h4>Elijah Effinger</h4>
                     <span>Deputy Fire Marshal</span>
+                    <span>-</span>
+                    <span>Fire Inspector, Plan Review Fire Alarm & Sprinkler</span>
+                    <span><br></span>
                   </div>
                 </div>
               </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <a class="btn-primary pointer me-2" href=“tel:208-468-5721”>208-468-5721</a>
+                <button class="btn btn-danger rounded-0 btn-sm">Email Elijah</button>
+              </div>
             </div>
+
 
           </div>
 
         </div>
       </section>
-      <!-- End Team Section -->
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team">
+      <!-- End Prevention Section -->
+      <!-- ======= Training Section ======= -->
+      <section id="training" class="team">
         <div class="container">
 
           <div class="section-title">
-            <span>Training Team</span>
             <h2>Training Team</h2>
-            <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+            <p>Training Division is Located at 300 W. Railroad Nampa, ID 83687</p>
           </div>
 
           <div class="row justify-content-around">
 
-            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member">
+                <img src="assets/img/team/admin/RobertJardine(DivisionChiefofTraining).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Robert Jardine</h4>
+                    <span>Division Chief of Training</span>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <button class="btn btn-danger rounded-0 btn-sm">Email Robert</button>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
               <div class="member">
                 <img src="assets/img/team/training/MichaelScott(TrainingCaptain).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -404,9 +713,12 @@
                   </div>
                 </div>
               </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <button class="btn btn-danger rounded-0 btn-sm">Email Michael</button>
+              </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0 ">
               <div class="member">
                 <img src="assets/img/team/training/BenMcDermott(TrainingCaptain).jpg" class="img-fluid" alt="">
                 <div class="member-info">
@@ -416,6 +728,9 @@
                   </div>
                 </div>
               </div>
+              <div class="text-center border border-dark border-opacity-25 p-2">
+                <button class="btn btn-danger rounded-0 btn-sm">Email Ben</button>
+              </div>
             </div>
 
           </div>
@@ -423,103 +738,112 @@
         </div>
       </section>
       <!-- End Team Section -->
-
-                                   <!-- ======= Stations Section ======= -->
-      <section id="stations" class="team">
+  <!-- ======= Admin Section ======= -->
+        <section id="admin" class="team">
         <div class="container">
-              <div class="section-title" >
-            <span>Stations</span>
-            <h2>Stations</h2>
+
+          <div class="section-title">
+            <h2>NFPD Administration Team</h2>
+            <p>Reach Administration at <a href=“tel:208-468-5770”>208-468-5770</a><br></p>
+            <button class="btn btn-danger rounded-0 mt-1"><a class="no-style" href="mailto:admin@nampafire.org">Or Send us an Email</a></button>
           </div>
+
           <div class="row justify-content-center">
-          
-          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="member">
-              <img src="assets/img/stations/station1.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 1</h4>
-                  <span>   923 1st Street South <br>
-                  Nampa Idaho, 83651 <br>
-                  (208) 468-5771</span>
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member" >
+                <img src="assets/img/team/admin/KirkCarpenter2(Chief).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Debby Pack</h4>
+                    <span>Account Specialist</span>
+                    <span><a class="no-style" href="mailto:payables@nampafire.org">payables@nampafire.org</a></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="member">
-              <img src="assets/img/stations/Station2.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 2</h4>
-                  <span> 1001 E Greenhurst Rd. <br>
-                    Nampa Idaho, 83686 <br>
-                    (208) 468-5772</span>
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member">
+                <img src="assets/img/team/admin/ChrisKing(DeputyFireChiefofOperations).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Norah Culbertson</h4>
+                    <span>Fire District Administration Assistant</span>
+                    <span><a class="no-style" href="mailto:admin@nampafire.org">admin@nampafire.org</a></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-           <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="member">
-              <img src="assets/img/stations/station3.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 3</h4>
-                  <span>  7935 Birch Lane <br>
-                  Nampa Idaho, 83687 <br>
-                  (208) 468-5773</span>
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member">
+                <img src="assets/img/team/admin/NickAdams(DeputyChiefofLogistics).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Kristie Williams</h4>
+                    <span>HR Specialist & Member Services</span>
+                    <span><a class="no-style" href="mailto:hr@nampafire.org">hr@nampafire.org</a></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          
-             <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="member">
-              <img src="assets/img/stations/station4.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 4</h4>
-                  <span>  2112 W. Flamingo Rd. <br>
-                    Nampa Idaho, 83651 <br>
-                    (208) 468-5774</span>
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member" >
+                <img src="assets/img/team/admin/RonJohnson(DeputyChiefFireMarshal).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Juliana Linan</h4>
+                    <span>Prevention Bureau Administration Assistant</span>
+                    <span><a class="no-style" href="mailto:prevention@nampafire.org">prevention@nampafire.org</a></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-           <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-3">
-            <div class="member">
-              <img src="assets/img/stations/station5.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 5</h4>
-                  <span>  91 N. Happy Valley Rd. <br>
-                    Nampa Idaho, 83687 <br>
-                    (208) 468-5775</span>
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4">
+              <div class="member">
+                <img src="assets/img/team/admin/RobertJardine(DivisionChiefofTraining).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Misti Sanders</h4>
+                    <span>Executive Assistant</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-3">
-            <div class="member">
-              <img src="assets/img/stations/station6.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Station 6</h4>
-                  <span>Coming Soon!</span>
+
+            <div class="col-xl-3 col-lg-4 mt-4 col-md-6 mt-4">
+              <div class="member">
+                <img src="assets/img/team/admin/TomWright(DivisionChiefofEMS).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Jay Prado</h4>
+                    <span>Fire Systems Administrator</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="col-xl-3 col-lg-4 mt-4 col-md-6 mt-4">
+              <div class="member">
+                <img src="assets/img/team/admin/TomWright(DivisionChiefofEMS).jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Jamie Carpenter</h4>
+                    <span>Facilities Maintenance Technician</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
 
         </div>
-      </section>
-      <!-- End Features Section -->
+        </section>
+        <!-- End Admin Section -->
+ 
 
               </div>
             </div>
@@ -538,13 +862,118 @@
               </div>
             </div>
 
-            <!-- Begin Public Education Off Canvas -->
+            <!-- Begin Gallery Off Canvas -->
             <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="galleryOffCanvas" aria-labelledby="offcanvasLabel">
-              <div class="offcanvas-header">
-                <h1 class="offcanvas-title text-center" id="offcanvasLabel">Photo Gallery</h1>
+              <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#galleryOffCanvas"></i></h3>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
+                                                  <!-- ======= Stations Section ======= -->
+      <section id="stations" class="team">
+        <div class="container">
+              <div class="section-title" >
+            <h2>Stations</h2>
+            <p>If you need to reach a station, please reach out to NFPD Administration at <a href=“tel:208-468-5770”>208-468-5770</a> rather than calling a station directly.</p>
+          </div>
+          <div class="row justify-content-center">
+          
+          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="member">
+              <img src="assets/img/stations/station1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="member">
+              <img src="assets/img/stations/Station2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+           <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="member">
+              <img src="assets/img/stations/station3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          
+             <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-3">
+            <div class="member">
+              <img src="assets/img/stations/station4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+           <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-3">
+            <div class="member">
+              <img src="assets/img/stations/station5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mt-4 mt-md-3">
+            <div class="member">
+              <img src="assets/img/stations/station6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End Station Section -->
+
+                                                 <!-- ======= admin Office Section ======= -->
+      <section id="adminOffice" class="team">
+        <div class="container">
+              <div class="section-title" >
+            <h2>NFPD Administration Office</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <img src="./assets/img/stations/admin.jpeg" class="img-fluid" alt="fire administration headquarters photo">
+            </div>
+            <div class="col-md-6">
+              <div class="card shadow rounded-0 p-2">
+                <div class="card-content">
+                 <h3>NFPD Administration Office is the headquarters for the NFPD Command Team & Administrative Team.</h3>
+                  <p>9 12th Ave. S, Nampa, ID 93651<br>
+                  <a href=“tel:208-468-5770”>208-468-5770</a><br>
+                  <a href="mailto:admin@nampafire.org">admin@nampafire.org</a><br>
+                  <a href=“tel:208-899-8405”>Fax - 208-899-8405</a>
+                </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End admin office Section -->
+                                                     <!-- ======= training grounds Section ======= -->
+      <section id="adminOffice" class="team">
+        <div class="container">
+              <div class="section-title" >
+            <h2>NFPD Training Grounds</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <img src="./assets/img/stations/admin.jpeg" class="img-fluid" alt="fire administration headquarters photo">
+            </div>
+            <div class="col-md-6">
+              <div class="card shadow rounded-0 p-2">
+                <div class="card-content">
+                 <h3>NFPD Training Grounds are the headquarters for the NFPD Training Team including Chief of EMS & division Chief of Training.</h3>
+                  <p>300 W. Railroad, Nampa, ID, 83687
+                </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End training grounds Section -->
                 <!-- ======= Photo Gallery Section ======= -->
       <section id="photo" class="photo section-bg">
         <div class="container">
@@ -556,57 +985,8 @@
           </div>
 
 
-          <div class="masonry-with-columns">
+          <div class="photo-container">
 
-           <div>
-                <img src="assets/img/photo/Website1.JPG" class="img-fluid" alt="">
-              </div>
-            
-
-            <div >
-                <img src="assets/img/photo/Website2.JPG" class="img-fluid" alt="">
-              </div>
-
-              <div>
-                <img src="assets/img/photo/Website3.JPG" class="img-fluid" alt="">
-              </div>
-
-              <div>
-                <img src="assets/img/photo/Website4.JPG" class="img-fluid" alt="">
-              </div>
-
-
-              <div>
-                <img src="assets/img/photo/Website5.JPG" class="img-fluid" alt="">
-              </div>
-
-              <div>
-                <img src="assets/img/photo/Website6.JPG" class="img-fluid" alt="">
-              </div>
-
-              <div>
-                <img src="assets/img/photo/Website7.jpg" class="img-fluid" alt="">
-              </div>
-
-
-              <div>
-                <img src="assets/img/photo/Website8.jpeg" class="img-fluid" alt="">
-              </div>
-
-
-              <div>
-                <img src="assets/img/photo/Website9.JPG" class="img-fluid" alt="">
-              </div>
-
-
-              <div>
-                <img src="assets/img/photo/Website10.JPG" class="img-fluid" alt="">
-              </div>
-
-
-              <div>
-                <img src="assets/img/photo/2023_a_shift-2signatureandwatermark.jpg" class="img-fluid" alt="">
-              </div>
 
           </div>
 
@@ -615,269 +995,23 @@
       <!-- End Photo Gallery Section -->
               </div>
             </div>
-
-            <!-- <div class="col-md-6 d-flex justify-content-center" data-bs-toggle="offcanvas" data-bs-target="#trainingOffCanvas">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-binoculars" style="color: #f0b103;"></i>
-                <h4>Training</h4>
-              </div>
-            </div> -->
-
-
-            <!-- Begin Training Off Canvas -->
-            <!-- <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="educationOffCanvas" aria-labelledby="offcanvasLabel">
-              <div class="offcanvas-header">
-                <h1 class="offcanvas-title text-center" id="offcanvasLabel">Training</h1>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                Training details go here!
-              </div>
-            </div> -->
           </div>
-
-          <!-- <div class="row mt-4">
-            <div class="col-3 text-center" data-aos="fade-up" data-aos-delay="100">
-              <div class="pdf-box ">
-                <i class='bx bxs-file-pdf icon'></i>
-              </div>
-              <p class="pointer">Download me!</p>
-            </div>
-          </div>
-       -->
         </div>
       </section>
-      <!-- End Services Section -->
-
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container">
-
-          <div class="row">
-            <div style="background-image: url(assets/img/sub-districts-map.png)" data-aos="fade-right" class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" "></div>
-            <div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch mt-4">
-              <div class="content d-flex flex-column " data-aos="fade-left">
-                <h3>Nampa Fire Protection District</h3>
-                <p>
-                  Excellence | Service | Strength in Unity
-                </p>
-                <div class="row">
-                  <!-- <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#aboutUs">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Public Information</h4>
-                    <p>Learn more about the Nampa Fire District including our history here</p>
-                  </div> -->
-
-                  <div class="col-md-12 icon-box mt-md-5 pointer" data-aos="zoom-in" data-aos-delay="200" data-bs-toggle="offcanvas" data-bs-target="#commandOffCanvas">
-                    <i class='bx bxs-user'></i>
-                    <h4>Board of Commissioners</h4>
-                    <!-- <p>See career and employment information, including active positions here</p> -->
-                    <p>Check out the memebers that make up our Board of Commissioners</p>
-                  </div>
-
-                  <div class="col-md-12 icon-box mb-md-5" >
-                    <i class='bx bx-calendar'></i>
-                    <h4>Regular Meeting</h4>
-                    <p>Monday - June 12, 2023  |  6:00PM
-                      Nampa Fire Training - 300 W. Railroad St. Nampa
-                      <span class="mt-2 d-block d-md-none">
-                        <a href="" target="_blank">Live Feed Of This Meeting</a>
-                      </span>
-                    </p>
-                      <span class="d-flex text-center mt-2 d-md-block d-none">
-                        <a href="" target="_blank">Live Feed Of This Meeting</a>
-                      </span>
-                  </div>
-
-                  <div class="col-md-6 icon-box  mt-5 mb-md-5" data-aos="zoom-in" data-aos-delay="400">
-                    <i class='bx bx-archive-in'></i>
-                    <h4>Public Information</h4>
-                    <p class="blue pointer" href="https://forms.office.com/Pages/ResponsePage.aspx?id=YwyKgw8U4UqstzXTmin20EbILO9vrMRDh7wOxRNC2NlUOEJBN1pXMU5BVkYyVU9VSFRZRFlVMEpQNS4u" target="_blank">Request A Public Record</p>
-                  </div>
+      <!-- End NFPD Overview Section -->
 
 
-                  <div class="col-md-6 icon-box pointer mt-5 mb-md-5" data-aos="zoom-in" data-aos-delay="300" data-bs-toggle="offcanvas" data-bs-target="#forms">
-                    <i class='bx bx-question-mark'></i>
-                    <h4>FAQ'S</h4>
-                    <p>View Frequently Asked Questions</p>
-                  </div>
-
-
-                  
-
-                  <!-- <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400" data-bs-toggle="offcanvas" data-bs-target="#outdoor">
-                    <i class="bx bx-shield"></i>
-                    <h4>Outdoor Burning</h4>
-                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                  </div> -->
-
-
-                  
-                </div>
-              </div><!-- End .content-->
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End About Section -->
-
-
-
-      <!-- ======= Clients Section ======= -->
-      <!-- <section id="clients" class="clients">
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-            </div>
-
-            <div class="col-lg-2 col-md-4 col-6">
-              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-            </div>
-
-          </div>
-
-        </div>
-      </section> -->
-      <!-- End Clients Section -->
-
-      
-
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container">
-
-          <div class="text-center" data-aos="zoom-in">
-            <h3>Is my address within Nampa Fire District</h3>
-            <form action="">
-              <input type="text" class="form-group" placeholder="My Address..."/>
-            </form>
-          </div>
-
-        </div>
-      </section>
-      
-
-
-
-     
-
-      <!-- ======= Testimonials Section ======= -->
-      <!-- <section id="testimonials" class="testimonials">
-        <div class="container position-relative">
-
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper"> -->
-
-              <!-- <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-              <!-- End testimonial item -->
-
-              <!-- <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-              <!-- End testimonial item -->
-
-              <!-- <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-              
-              <!-- End testimonial item -->
-
-              <!-- <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-              <!-- End testimonial item -->
-
-              <!-- <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div> -->
-              <!-- End testimonial item -->
-
-            <!-- </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </section> -->
-      <!-- End Testimonials Section -->
-
-
+      <!-- Permits and Applications Section -->
       <section id="permits">
         <div class="container">
           <div class="section-title" data-aos="fade-down">
-            <span>Permits And Applications</span>
             <h2>Permits And Applications</h2>
           </div>
           <div class="row">
             <div class="col-md-12 text-center" >
-              <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#businessOffCanvas">
-                <h3>Business Applications</h3>
-                <p class="small">Fire Alarm & Sprinklers, Fireworks & Pyrotechnics, Commercial Restaurant, General Business Applications, Developer Guidelines.</p>
+              <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#protectionSystemOffCanvas">
+                <h3>Fire Protection Systems Permits & Applications</h3>
+                <p class="small">Fire Sprinkler, Fire Alarm & Communicator, Cooking Hood, and Fire Extinguisher Permits & Applications</p>
                 <div class="go-corner" href="#">
                   <div class="go-arrow">
                     <i class="bx bx-right-arrow-alt"></i>
@@ -887,9 +1021,9 @@
           </div>
 
           <div class="col-md-12 text-center" >
-            <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#flammableOffCanvas">
-              <h3>Flammable Material Permits</h3>
-              <p class="small">Hazardous Storage Permits, Burn Permits.</p>
+            <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#businessOffCanvas">
+              <h3>Business Guidelines & Applications</h3>
+              <p class="small">Fireworks/Pyrotechnics, Restaurant, Developers & Daycare Guidelines, Hazardous Material, Special Burn Permit, Fire Extinguisher</p>
               <div class="go-corner" href="#">
                 <div class="go-arrow">
                   <i class="bx bx-right-arrow-alt"></i>
@@ -900,8 +1034,8 @@
 
         <div class="col-md-12 text-center" >
           <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#residentialOffCanvas">
-            <h3>Residential Permits</h3>
-            <p class="small">Residential Access & Water Supply, Burn Permits.</p>
+            <h3>Residential Permits & Guidelines</h3>
+            <p class="small">Burn Permits, Residential Access & Water Supply, Smoke Alarm Assistance Application</p>
             <div class="go-corner" href="#">
               <div class="go-arrow">
                 <i class="bx bx-right-arrow-alt"></i>
@@ -912,8 +1046,170 @@
 
       
                 <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="businessOffCanvas" aria-labelledby="offcanvasLabel">
-                  <div class="offcanvas-header">
-                    <h1 class="offcanvas-title text-center" id="offcanvasLabel">Business Applications</h1>
+                  <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                    <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#businessOffCanvas"></i></h3>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="row justify-content-center mb-4 text-center">
+                      <div class="section-title">
+                        <h2>Fireworks and Pyrotechnics</h2>
+                      </div>
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/NampaFireFireworkSafetyDocument.pdf" download><i class='bx bx-archive-in'></i>Download Firework Saftey Information</a>
+                        </div>
+      
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/RuralApplicationforFireworkStand.pdf" download><i class='bx bx-archive-in'></i>Download a Rural Firework Stand Application</a>
+                        </div>
+      
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/AerialPyrotechnicsPermit.pdf" download><i class='bx bx-archive-in'></i>Download a Aerial Pyrotechnics Permit</a>
+                        </div>
+      
+                        <div class="col-12 text-center my-5">
+                          <a href="https://www.cityofnampa.us/DocumentCenter/View/1270/City-Firework-Stand-Application?bidId" target="_blank"><i class='bx bx-archive-in'></i>Application For A Temporary Use Permit-Fire Work Stand</a>
+                        </div>
+      
+                        <div class="section-title">
+                          <h2>Commercial Restaurant</h2>
+                        </div>
+                        
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block" href="./assets/pdfs/CookingHoodFireExtinguishingSystem.pdf" download><i class='bx bx-archive-in'></i>Download a Cooking Hood Fire Extinguishing System Permit</a>
+                        </div>
+      
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/SWIdahoMobileFoodTruckInspectionChecklist.pdf" download><i class='bx bx-archive-in'></i>Download a Mobile Food Truck Inspection Checklist</a>
+                        </div>
+      
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/TemporaryStructurePermit.pdf" download><i class='bx bx-archive-in'></i>Download a Temporary Structure</a>
+                        </div>
+      
+                        <div class="section-title mt-5 mb-0" >
+                          <h2>General Business Applications</h2>
+                        </div>
+      
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/HydrantFlowRequest.pdf" download><i class='bx bx-archive-in'></i>Download a Temporary Structure</a>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-center" >
+                          <a class="d-block mt-5" href="./assets/pdfs/InHomeRequirements.pdf" download><i class='bx bx-archive-in'></i>Download In Home Daycare Requirements/Information</a>
+                        </div>
+
+                         <div class="section-title mt-5">
+                    <h2>Hazardous Storage Permits</h2>
+                  </div>
+
+                  <div class="col-12 d-flex justify-content-center" >
+                    <a class="d-block mt-5" href="./assets/pdfs/FuelStorageTankPermitApplication.pdf" download><i class='bx bx-archive-in'></i>Download Fuel Storage Tank Permit</a>
+                  </div>
+      
+      
+                        <div class="section-title mt-5">
+                          <h2>Developer Guidelines</h2>
+                        </div>
+
+                        <div class="col-12 text-center mb-5">
+                          <a href="https://www.cityofnampa.us/163/Building-Safety" target="_blank"><i class='bx bx-archive-in'></i>City of Nampa Developer Guidelines</a>
+                        </div>
+                        
+                      </div>
+                  </div>
+      
+                </div>
+
+                
+            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="protectionSystemOffCanvas" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#protectionSystemOffCanvas"></i></h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="row justify-content-center mb-4">
+                 
+
+                  </div>
+              </div>
+            </div>
+    
+            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="residentialOffCanvas" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#residentialOffCanvas"></i></h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="row justify-content-center mb-4">
+
+                  <div class="section-title mt-5">
+                    <h2>Residential Access & Water Supply</h2>
+                  </div>
+
+                  <div class="col-12 d-flex justify-content-center" >
+                    <a class="d-block mt-5" href="./assets/pdfs/AccessWaterSupplyPermit.pdf" download><i class='bx bx-archive-in'></i>Download Access & Water Supply Permit</a>
+                  </div>
+
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- End Permits and Applications Section  -->
+
+   <!-- Community OutReach Section  -->
+      <section id="communityOutreach">
+        <div class="container">
+          <div class="section-title" data-aos="fade-down">
+            <h2>Community Outreach</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center" >
+              <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#communityOffCanvas">
+                <h3>Community Programs</h3>
+                <p class="small">Station Tours, Ride-Along, Firefighter Visits, Car Seats</p>
+                <div class="go-corner" href="#">
+                  <div class="go-arrow">
+                    <i class="bx bx-right-arrow-alt"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-12 text-center" >
+            <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#homeSafetyOffCanvas">
+              <h3>Home Safety Programs & Information</h3>
+              <p class="small">Smoke Alarm Program, Fire Escape Plan, Corbon Monoxide, Red Cross Programs</p>
+              <div class="go-corner" href="#">
+                <div class="go-arrow">
+                  <i class="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 text-center" >
+          <div class="card1" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#faqOffCanvas">
+            <h3>Frequently Asked Questions</h3>
+            <p class="small">Firework Information, Hazardous Material Removal, Burn Permits, Fire Extinguishers, Car Seats</p>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      
+                <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="communityOffCanvas" aria-labelledby="offcanvasLabel">
+                  <div class="offcanvas-header border-bottom border-dark border-opacity-25">
+                    <h3><i class="bi bi-arrow-left pointer" data-bs-toggle="offcanvas"
+                        data-bs-target="#communityOffCanvas"></i></h3>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
@@ -1058,13 +1354,228 @@
           </div>
       </section>
 
+      <!-- ======= Public Resources Section ======= -->
+      <section id="publicResources" class="about">
+        <div class="container">
+
+          <div class="row">
+            <div style="background-image: url(assets/img/sub-districts-map.png)" data-aos="fade-right" class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" "></div>
+            <div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch mt-4">
+              <div class="content d-flex flex-column " data-aos="fade-left">
+                <h3>Nampa Fire Protection District</h3>
+                <p>
+                  Excellence | Service | Strength in Unity
+                </p>
+                <div class="row">
+                  <!-- <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="offcanvas" data-bs-target="#aboutUs">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Public Information</h4>
+                    <p>Learn more about the Nampa Fire District including our history here</p>
+                  </div> -->
+
+                  <div class="col-md-12 icon-box mt-md-5 pointer" data-aos="zoom-in" data-aos-delay="200" data-bs-toggle="offcanvas" data-bs-target="#commisionerOffCanvas">
+                    <i class='bx bxs-user'></i>
+                    <h4>Board of Commissioners</h4>
+                    <!-- <p>See career and employment information, including active positions here</p> -->
+                    <p>Check out the memebers that make up our Board of Commissioners</p>
+                  </div>
+
+                  <div class="col-md-12 icon-box mb-md-5" >
+                    <i class='bx bx-calendar'></i>
+                    <h4>Regular Meeting</h4>
+                    <p>Monday - June 12, 2023  |  6:00PM
+                      Nampa Fire Training - 300 W. Railroad St. Nampa
+                      <span class="mt-2 d-block d-md-none">
+                        <a href="" target="_blank">Live Feed Of This Meeting</a>
+                      </span>
+                    </p>
+                      <span class="d-flex text-center mt-2 d-md-block d-none">
+                        <a href="" target="_blank">Live Feed Of This Meeting</a>
+                      </span>
+                  </div>
+
+                  <div class="col-md-6 icon-box  mt-5 mb-md-5" data-aos="zoom-in" data-aos-delay="400">
+                    <i class='bx bx-archive-in'></i>
+                    <h4>Public Information</h4>
+                    <p class="blue pointer" href="https://forms.office.com/Pages/ResponsePage.aspx?id=YwyKgw8U4UqstzXTmin20EbILO9vrMRDh7wOxRNC2NlUOEJBN1pXMU5BVkYyVU9VSFRZRFlVMEpQNS4u" target="_blank">Request A Public Record</p>
+                  </div>
+
+
+                  <div class="col-md-6 icon-box pointer mt-5 mb-md-5" data-aos="zoom-in" data-aos-delay="300" data-bs-toggle="offcanvas" data-bs-target="#forms">
+                    <i class='bx bx-question-mark'></i>
+                    <h4>FAQ'S</h4>
+                    <p>View Frequently Asked Questions</p>
+                  </div>
+
+
+                  
+
+                  <!-- <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400" data-bs-toggle="offcanvas" data-bs-target="#outdoor">
+                    <i class="bx bx-shield"></i>
+                    <h4>Outdoor Burning</h4>
+                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  </div> -->
+
+
+                  
+                </div>
+              </div><!-- End .content-->
+            </div>
+          </div>
+          
+        </div>
+      </section><!-- End About Section -->
+      
+
+   
+      
+      <!-- ======= Clients Section ======= -->
+      <!-- <section id="clients" class="clients">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+      <!-- End Clients Section -->
+
+      
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+
+
+
+        </div>
+      </section>
+      
+
+
+
+     
+
+      <!-- ======= Testimonials Section ======= -->
+      <!-- <section id="testimonials" class="testimonials">
+        <div class="container position-relative">
+
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper"> -->
+
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+              <!-- End testimonial item -->
+
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+              <!-- End testimonial item -->
+
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+              
+              <!-- End testimonial item -->
+
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+              <!-- End testimonial item -->
+
+              <!-- <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div> -->
+              <!-- End testimonial item -->
+
+            <!-- </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section> -->
+      <!-- End Testimonials Section -->
+
+
+      
+
       
       <!-- ======= Contact Us Section ======= -->
       <section id="contact" class="contact">
         <div class="container">
 
           <div class="section-title" data-aos="fade-down">
-            <span>Contact Us</span>
             <h2>Contact Us</h2>
           </div>
 
@@ -1211,145 +1722,6 @@
   </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Navigate To The Top"> <i class="bx bx-up-arrow-alt"></i></a>
-
-  <!-- BEGIN ABOUT US OFF CANVAS  -->
-  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="aboutUs" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title text-center" id="offcanvasLabel">About Us and History</h1>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      details go here!
-    </div>
-  </div>
-
-  <!-- BEGIN CAREER INFORMATION OFF CANVAS -->
-  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="careers" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title text-center" id="offcanvasLabel">Career Information</h1>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      details go here!
-    </div>
-  </div>
-
-  <!-- BEGIN FORMS AND APPLICATIONS OFFCANVAS  -->
-  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="forms" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title text-center" id="offcanvasLabel">FAQ</h1>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <!-- ======= F.A.Q Section ======= -->
-      <section id="faq" class="faq">
-        <div class="container">
-
-          <div class="section-title" data-aos="fade-down">
-            <span>F.A.Q</span>
-            <h2>F.A.Q</h2>
-            <p>Frequently Asked Questions</p>
-          </div>
-
-          <div class="faq-list">
-            <ul>
-              <li data-aos="fade-up">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Burn Permit Information <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <a href="">Start a Burn Permit Request</a>
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Fireworks <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <object class="d-none d-md-block" data="./assets/pdfs/NampaFireFireworkSafetyDocument.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/NampaFireFireworkSafetyDocument.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none" href="./assets/pdfs/NampaFireFireworkSafetyDocument.pdf" download>Download Firework Saftey Information</a>
-                    <a href="" class="mt-4">Obtain a Firework Permit</a>
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Fire Extinguishers <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <object class="d-none d-md-block" data="./assets/pdfs/FireExtinguisherQuestions.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/Fire ExtinguisherQuestions.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none" href="./assets/pdfs/FireExtinguisherQuestions.pdf" download>Download Fire Extinguisher Information</a>
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Car Seats <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <object class="d-none d-md-block" data="./assets/pdfs/CarSeatProgram.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/CarSeatProgram.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none" href="./assets/pdfs/CarSeatProgram.pdf" download>Download Car Seat Information</a>
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Home Smoke Alarms(Detectors) <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <object class="d-none d-md-block" data="./assets/pdfs/SmokeAlarmAssistanceProgram.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/SmokeAlarmAssistanceProgram.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none mt-4" href="./assets/pdfs/SmokeAlarmAssistanceProgram.pdf" download>Download Smoke Alarm Assistance Program Information</a>
-
-                    <object class="d-none d-md-block" data="./assets/pdfs/SmokeAlarmSafetyTipsAssistanceProgramInfoSheet.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/SmokeAlarmSafetyTipsAssistanceProgramInfoSheet.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none mt-4" href="./assets/pdfs/SmokeAlarmSafetyTipsAssistanceProgramInfoSheet.pdf" download>Download Smoke Alarm Saftey Tips Program Information</a>
-
-                    <object class="d-none d-md-block" data="./assets/pdfs/SmokeAlarmApplication.pdf" type="application/pdf" width="100%" height="500px">
-                      <p>Unable to display PDF file. <a href="./assets/pdfs/SmokeAlarmApplication.pdf" download>Download</a> instead.</p>
-                    </object>
-                    <a class="d-block d-md-none mt-4" href="./assets/pdfs/SmokeAlarmApplication.pdf" download>Download Smoke Alarm Application</a>
-
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Hazardous Materials <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <a class="mt-4" data-bs-toggle="offcanvas" data-bs-target="#flammableOffCanvas">Start a Hazardous Storage Permit Request</a>
-                    <a class="mt-4" href="https://www.cityofnampa.us/1381/Hazardous-WasteLos-Desechos-Peligrosa" target="_blank">Hazardous Material Removal</a>
-                  </p>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-
-        </div>
-      </section><!-- End F.A.Q Section -->
-    </div>
-  </div>
-
-  <!-- BEGIN OUTDOOR BURNING OFF CANVAS  -->
-  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="outdoor" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title text-center" id="offcanvasLabel">Outdoor Burning</h1>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      details go here!
-    </div>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
