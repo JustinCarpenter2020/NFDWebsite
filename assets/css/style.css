@@ -372,6 +372,11 @@ h6 {
   background-position: center;
 }
 
+.nfpd-permits {
+  background: url("../img//permits_applications.jpg");
+  background-position: center;
+}
+
 .nfpd-about {
   background: url("../img//photo/Website4.JPG");
 }
@@ -492,6 +497,10 @@ section {
   z-index: 2;
 }
 
+.career-link{
+  text-decoration: none;
+}
+
 .section-title span {
   position: absolute;
   top: 30px;
@@ -565,8 +574,8 @@ section {
 .about .image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 80vh;
+  background-size: cover;
+  min-height: 95vh;
 }
 
 @media (max-width: 991px) {
