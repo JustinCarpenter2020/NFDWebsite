@@ -1878,3 +1878,25 @@ section {
             border-radius: 8px;
             background-color: #E54B4B;
         }
+
+        .grow { 
+          transition: all .2s ease-in-out; 
+          cursor: pointer;
+          }
+          
+          .grow:hover { 
+          transform: scale(1.1); 
+          }
+
+          .card-width{
+            color: black;
+          }
+
+
+          @media (min-width: 700px) {
+            .card-width {
+              width: 30vw;
+              color: black;
+            }
+          }
+          
