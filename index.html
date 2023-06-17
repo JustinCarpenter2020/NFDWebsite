@@ -1592,7 +1592,7 @@
             </div>
           </div>
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400">
+          <form onsubmit="sendEmail(); return false;"  method="get" enctype="text/plain" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400" id="contact-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1605,19 +1605,39 @@
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" id="body" name="body" rows="5" placeholder="Message" required></textarea>
             </div>
             <div class="form-group mt-3">
               <input class="form-control" type="file" name="attachment">
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div id="success" class="sent-message d-none">Your message has been sent. Thank you!</div>
+              <div id="failure" class="error-message d-none">There was an issue sending your message, please confirm the you email provided is valid or contact us directly at TBD</div>
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
 
+          <!-- <form onsubmit="sendEmail(); return false;" method="get" enctype="text/plain" class="js-email-form" id="contact-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" id="body" name="body" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div id="success" class="sent-message d-none">Your message has been sent. Thank you!</div>
+              <div id="failure" class="error-message d-none">There was an issue sending your message, please confirm the you email provided is valid or contact us directly at frssbusiness@Gmail.com</div>
+            </div>
+            <div class="text-center my-4"><button type="submit">Send Message</button></div>
+          </form> -->
         </div>
       </section><!-- End Contact Us Section -->
 
@@ -1702,7 +1722,35 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+     function sendEmail(){
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "JacobCarpenter407@Gmail.com",
+          Password: "B3E2AAAFDEC4EB5C1DB30CEC2C177F42DE2E",
+          SecureToken: "2e4d3926-f274-4f84-a06b-d05f505d2cc3",
+          To: 'JacobCarpenter407@Gmail.com',
+          From: document.getElementById("email").value,
+          Subject: document.getElementById("subject").value,
+          Body: document.getElementById("body").value,
+          Name: "Name: " + document.getElementById("name").value
+        })
+          .then(function (message) {
+            document.getElementById("failure").classList.add("d-none")
+            if(message.includes("name not allowed")){
+              document.getElementById("failure").classList.remove("d-none")
+            } else {
+              document.getElementById("success").classList.remove("d-none")
+              setTimeout(() => {
+                document.getElementById("success").classList.add("d-none")
+              }, "5000") 
+              document.getElementById('contact-form').reset();
+            }
+          });
+    }
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
