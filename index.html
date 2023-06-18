@@ -1728,10 +1728,8 @@
      function sendEmail(){
         Email.send({
           Host: "smtp.elasticemail.com",
-          Username: "JacobCarpenter407@Gmail.com",
+          Username: "frssbusiness@gmail.com",
           Password: "B3E2AAAFDEC4EB5C1DB30CEC2C177F42DE2E",
-          SecureToken: "41277a7b-2478-4407-80b3-c3122dda2ec6",
-          port: "2525",
           To: 'JacobCarpenter407@Gmail.com',
           From: document.getElementById("email").value,
           Subject: document.getElementById("subject").value,
@@ -1751,6 +1749,33 @@
             }
           });
     }
+    //  function sendEmail(){
+    //     Email.send({
+    //       Host: "smtp.elasticemail.com",
+    //       Username: "JacobCarpenter407@Gmail.com",
+    //       Password: "B3E2AAAFDEC4EB5C1DB30CEC2C177F42DE2E",
+    //       SecureToken: "41277a7b-2478-4407-80b3-c3122dda2ec6",
+    //       UseDefaultCredentials: true,
+    //       port: "587",
+    //       To: 'vahivi5323@byorby.com',
+    //       From: document.getElementById("email").value,
+    //       Subject: document.getElementById("subject").value,
+    //       Body: document.getElementById("body").value,
+    //       Name: "Name: " + document.getElementById("name").value
+    //     })
+    //       .then(function (message) {
+    //         document.getElementById("failure").classList.add("d-none")
+    //         if(message.includes("name not allowed")){
+    //           document.getElementById("failure").classList.remove("d-none")
+    //         } else {
+    //           document.getElementById("success").classList.remove("d-none")
+    //           setTimeout(() => {
+    //             document.getElementById("success").classList.add("d-none")
+    //           }, "5000") 
+    //           document.getElementById('contact-form').reset();
+    //         }
+    //       });
+    // }
   </script>
 
   <!-- Template Main JS File -->
