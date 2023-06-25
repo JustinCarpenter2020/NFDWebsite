@@ -1,10 +1,4 @@
-/**
-* Template Name: Plato
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -245,3 +239,26 @@
   });
 
 })()
+
+let emails = [{name: "Ron", email: "johnsonrl@nampafire.org"}, {name: "Rob", email: "johnsonre@nampafire.org"}, {name: "Mark", email: "stromm@nampafire.org"}, {name: "Melissa", email: "closem@nampafire.org"}, {name: "Elijah", email: "effingere@nampafire.org"}];
+
+let currentEmail = null;
+
+function setEmail(name){
+currentEmail = emails.find(e => e.name === name);
+document.getElementById('receiverName').innerHTML = "Contact " + name
+}
+
+function getBase64(file) {
+  var reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = function () {
+    return reader.result
+  };
+  reader.onerror = function (error) {
+    console.log('Error: ', error);
+  };
+
+}
+
+

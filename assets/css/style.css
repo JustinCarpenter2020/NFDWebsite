@@ -1496,11 +1496,18 @@ section {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
-  display: none;
+.sent-message {
   color: #fff;
-  background: #E54B4B;
+  background: #18d26e;
   text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
   padding: 15px;
   font-weight: 600;
 }
