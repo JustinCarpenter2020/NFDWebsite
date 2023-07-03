@@ -1709,6 +1709,7 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
           Subject: document.getElementById("subject").value,
           Body: document.getElementById("body").value + "    Email sent from: " + document.getElementById("email").value,
           Name: "Name: " + document.getElementById("name").value,
+          Port: 587
         })
           .then(function (message) {
             document.getElementById("failure").classList.add("d-none")
@@ -1732,6 +1733,7 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
           Subject: document.getElementById("subject-modal").value,
           Body: document.getElementById("body-modal").value + "    Email sent from: " + document.getElementById("email").value,
           Name: "Name: " + document.getElementById("name-modal").value,
+          Port: 587
         })
           .then(function (message) {
             document.getElementById("failure-modal").classList.add("d-none")
