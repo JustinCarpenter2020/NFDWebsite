@@ -1557,7 +1557,7 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
             </div>
           </div>
 
-          <form onsubmit="sendEmail('JakeCarpenter407@Gmail.com'); return false;"  method="get" enctype="text/plain" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400" id="contact-form">
+          <form onsubmit="sendEmail('JustinCarpenter2020Gmail.com'); return false;"  method="get" enctype="text/plain" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400" id="contact-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1703,13 +1703,12 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
   <script>
      function sendEmail(receivingEmail){
         Email.send({
-          SecureToken: "8577d134-015e-4bd9-afca-84dfb5ef37a8",
+          SecureToken: "6e80cfe1-1ada-4e8f-be10-d8f0172c02bb",
           To: receivingEmail,
           From: "nfpd-noreply@nampafire.org",
           Subject: document.getElementById("subject").value,
           Body: document.getElementById("body").value + "    Email sent from: " + document.getElementById("email").value,
-          Name: "Name: " + document.getElementById("name").value,
-          Port: 587
+          Name: "Name: " + document.getElementById("name").value
         })
           .then(function (message) {
             document.getElementById("failure").classList.add("d-none")
