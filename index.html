@@ -1759,9 +1759,8 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
           To: receivingEmail,
           From: "nfpd-noreply@nampafire.org",
           Subject: document.getElementById("subject-modal").value,
-          Body: document.getElementById("body-modal").value + "    Email sent from: " + document.getElementById("email").value,
-          Name: "Name: " + document.getElementById("name-modal").value,
-          Port: 587
+          Body: document.getElementById("body-modal").value + "    Email sent from: " + document.getElementById("email-modal").value,
+          Name: "Name: " + document.getElementById("name-modal").value
         })
           .then(function (message) {
             document.getElementById("failure-modal").classList.add("d-none")
