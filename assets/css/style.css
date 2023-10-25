@@ -364,21 +364,21 @@ h6 {
 }
 
 .main-hero {
-  background: url("../img/hero.jpg") top center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/hero.jpg?alt=media&token=517fb7c7-5168-41ed-ab68-094897212d79&_gl=1*1s66a06*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzA0Ni41Ny4wLjA.") top center;
 }
 
 .nfpd-info {
-  background: url("../img/nfpdInfo.jpg") top center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/nfpdInfo.jpg?alt=media&token=776cc584-af05-4ff7-bcfe-a5b28668da57&_gl=1*11um3t2*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzY1MS4xMC4wLjA.") top center;
   background-position: center;
 }
 
 .nfpd-permits {
-  background: url("../img/WebsitePermits&Apps.JPG") top center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/WebsitePermits%26Apps.JPG?alt=media&token=0c0af963-b870-4f0c-9640-1f86249cd854&_gl=1*18v3pk*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzEwMi4xLjAuMA..") top center;
   background-position: center;
 }
 
 .nfpd-about {
-  background: url("../img//photo/Website4.JPG");
+  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/about.jpg?alt=media&token=191e1f87-edee-40a0-8c5b-072b20a5c263&_gl=1*1a6655h*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzE2My4xLjAuMA..");
 }
 
 #hero:before {
@@ -698,7 +698,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("../img/webmainpicbehindpermits.JPG") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/webmainpicbehindpermits.JPG?alt=media&token=b85e220f-2f3a-4f9c-a775-c8fda87126b6&_gl=1*18xbund*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzgzNy42MC4wLjA.") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -825,14 +825,6 @@ section {
 /*--------------------------------------------------------------
 # Photo Gallery
 --------------------------------------------------------------*/
-.history-img {
-  background-image: url("../img/history.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 140vh
-}
-
 .photo-item {
   margin: 0;
   display: grid;
@@ -1037,13 +1029,6 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
 
 .testimonials::before {
   content: "";
