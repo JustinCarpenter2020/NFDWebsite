@@ -364,7 +364,7 @@ h6 {
 }
 
 .main-hero {
-  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/hero.jpg?alt=media&token=517fb7c7-5168-41ed-ab68-094897212d79&_gl=1*1s66a06*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzA0Ni41Ny4wLjA.") top center;
+  background: url("../img/hero.jpg") top center;
 }
 
 .nfpd-info {
