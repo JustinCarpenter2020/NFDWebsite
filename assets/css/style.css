@@ -368,17 +368,17 @@ h6 {
 }
 
 .nfpd-info {
-  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/nfpdInfo.jpg?alt=media&token=776cc584-af05-4ff7-bcfe-a5b28668da57&_gl=1*11um3t2*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzY1MS4xMC4wLjA.") top center;
+  background: url("../img/nfpdInfo.jpg") top center;
   background-position: center;
 }
 
 .nfpd-permits {
-  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/WebsitePermits%26Apps.JPG?alt=media&token=0c0af963-b870-4f0c-9640-1f86249cd854&_gl=1*18v3pk*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzEwMi4xLjAuMA..") top center;
+  background: url("../img/permitsHero.jpg") top center;
   background-position: center;
 }
 
 .nfpd-about {
-  background: url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/about.jpg?alt=media&token=191e1f87-edee-40a0-8c5b-072b20a5c263&_gl=1*1a6655h*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzE2My4xLjAuMA..");
+  background: url("../img/aboutnfpd.jpg");
 }
 
 #hero:before {
@@ -698,7 +698,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/webmainpicbehindpermits.JPG?alt=media&token=b85e220f-2f3a-4f9c-a775-c8fda87126b6&_gl=1*18xbund*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE3NzgzNy42MC4wLjA.") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("../img/webmainpicbehindpermits.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
