@@ -1004,161 +1004,53 @@
                     <h1>Permits and Applications</h1>
                     <a target="_blank" href="https://app.livsafe.com/public/517ddcc15a666cdb5b8c49006720c492" class="btn-get-started scrollto w-25 d-none d-md-block">Burn Permit Request</a>
                     <a target="_blank" href="https://forms.office.com/pages/responsepage.aspx?id=YwyKgw8U4UqstzXTmin20LHWcyLPoOBPplpTfNMOk8xUN0ZETldWWU44UUJFRVlLVFFCQkVaTko5NiQlQCN0PWcu" class="btn-get-started scrollto mt-4 w-25 d-none d-md-block">Permit Account Request Form</a>
-                    <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/2024_Fee_Schedule.pdf?alt=media&token=9ea2ea27-0355-4a3b-8c07-32c47c146f6a" download class="btn-get-started scrollto mt-4 w-25 d-none d-md-block">See Fee Schedule</a>
+                    <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2F2024%20Fee%20Schedule.pdf?alt=media&token=ac87ca25-69fa-473c-bea7-869fda008d79" download class="btn-get-started scrollto mt-4 w-25 d-none d-md-block">See Fee Schedule</a>
 
                     <!-- Mobile view -->
                     <a target="_blank" href="https://app.livsafe.com/public/517ddcc15a666cdb5b8c49006720c492" class="btn-get-started scrollto w-75 d-block d-md-none">Burn Permit Request</a>
                     <a target="_blank" href="https://forms.office.com/pages/responsepage.aspx?id=YwyKgw8U4UqstzXTmin20LHWcyLPoOBPplpTfNMOk8xUN0ZETldWWU44UUJFRVlLVFFCQkVaTko5NiQlQCN0PWcu" class="btn-get-started scrollto w-75 mt-4 d-block d-md-none">Permit Account Request Form</a>
-                    <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/2024_Fee_Schedule.pdf?alt=media&token=9ea2ea27-0355-4a3b-8c07-32c47c146f6a" download class="btn-get-started scrollto mt-4 w-75 d-block d-md-none">See Fee Schedule</a>
+                    <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2F2024%20Fee%20Schedule.pdf?alt=media&token=ac87ca25-69fa-473c-bea7-869fda008d79" download class="btn-get-started scrollto mt-4 w-75 d-block d-md-none">See Fee Schedule</a>
                   </div>
                   </section>
-                  <div class="row text-center">
-                    <a class="card col-md-4 p-0 shadow mx-0 mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFire%20Sprinkler%20Permit%20Application.pdf?alt=media&token=bdd74d03-2724-4208-a42a-76b22d36036e" download title="Download fire sprinkler permit application">
-                        <img src="./assets/img/sprinkler.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Fire Sprinkler Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireAlarmPermitApplication.pdf?alt=media&token=56d40e18-a43c-44dc-9829-f1ef6c68a7f1&_gl=1*1dae052*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDY1Ny40Mi4wLjA." download title="Download fire alarm permit application">
-                        <img src="./assets/img/firealarm.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Fire Alarm Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" data-bs-toggle="modal" data-bs-target="#burnPermitModal">
-                        <img src="./assets/img/burn_permit.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Burn Permit</p>
-                        </div>
-                      </a>
-
+                  <div class="container my-4">
+                    <div class="row align-items-center">
+                      <div class="col-md-6 mb-2">
+                        <input id="permitSearch" type="text" class="form-control" placeholder="Search permits...">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <select id="permitFilter" class="form-select">
+                          <option value="">All Permits</option>
+                          <option value="Burn">Burn Permits</option>
+                          <option value="Alarm">Alarm Permits</option>
+                          <option value="Firework">Firework Permits</option>
+                          <option value="Event">Event Permits</option>
+                          <option value="Water">Water Supply Permits</option>
+                          <option value="Hazardous">Hazardous Material Permits</option>
+                          <option value="Food">Food Permits</option>
+                          <option value="Inspection">Inspections</option>
+                          <option value="Communication">Communication Systems</option>
+                          <option value="Equipment">Equipment Installations</option>
+                          <!-- Add more keywords if needed -->
+                        </select>
+                      </div>
                     </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FCookingHoodFireExtinguishingSystem.pdf?alt=media&token=384f22d0-fc87-417f-bf4a-ed6d2bb31db4&_gl=1*fsy7wj*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDU3MS42MC4wLjA." download title="Download Commercial Hood Permit">
-                        <img src="./assets/img/hood.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Commercial Hood Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireAlarmCommunicatorReplacementApplication.pdf?alt=media&token=f97bf063-031d-44f1-8592-4864bf3a980a&_gl=1*mjzkgm*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDYzOS42MC4wLjA." download title="Download Fire Alarm Communicator Application">
-                        <img src="./assets/img/communicator.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Fire Alarm Communicator</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FDaycareInformationf%26Requirements.pdf?alt=media&token=ae6d256e-b425-4c1d-9619-97e56d0ce897&_gl=1*38wcwr*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDYxNy4xNC4wLjA." download title="Download DayCare Information">
-                        <img src="./assets/img/daycare.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Day Care Inspections</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireworkStandInstructions%26Application.pdf?alt=media&token=c4ab76d0-2c4b-48ae-8cfd-2f90cb8bbe1c&_gl=1*15my4hx*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDc5My42MC4wLjA." download title="Download Fireworks Permit">
-                        <img src="./assets/img/stand.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Firework Stand Permits</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAerialPyrotechnicsPermit.pdf?alt=media&token=2c7cb1b7-b68d-46c4-b683-b9638cff6281&_gl=1*170jk1h*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDM4NC40My4wLjA." download title="Download Pyrotechnics Permit">
-                        <img src="./assets/img/fireworks.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Pyrotechnics Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" data-bs-toggle="modal" data-bs-target="#foodTruckModal">
-                        <img src="./assets/img/foodTruck.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Food Truck Permit</p>
-                        </div>
-                      </a>  
-                    </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FTemporaryStructurePermit.pdf?alt=media&token=db774d83-b7a5-458e-889f-1a30bc9111b4&_gl=1*1rp4y1w*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MTYyOS42MC4wLjA." download title="Download Temporary Structure Permit">
-                        <img src="./assets/img/structure.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Temporary Structure Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FSpecialBurnPermit.pdf?alt=media&token=5b8ee1eb-a9dc-4aaf-b35e-d8a755bbc927&_gl=1*2oufqn*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MTYwNC4xMy4wLjA." download title="Download Special Burn Permit">
-                        <img src="./assets/img/specialBurn.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Special Burn Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FHydrantFlowRequest.pdf?alt=media&token=97edc2b2-38e5-42b2-8dcc-c32c3465c07b&_gl=1*9j00ge*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDk1MS40NC4wLjA." download title="Download Hydrant Flow Request">
-                        <img src="./assets/img/hydrantFlow.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Hydrant Flow Request</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAcess%26WaterSupplyInstructions%26Application.pdf?alt=media&token=88431b84-fbd1-4820-9437-34a10eec095d&_gl=1*1mr7e96*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDM2Ny42MC4wLjA." download title="Download Water Supply Permit">
-                        <img src="./assets/img/water_supply.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Residential Access Water Supply</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" data-bs-toggle="modal" data-bs-target="#smokeAlarmModal">
-                        <img src="./assets/img/smokealarm.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Smoke Alarm Program</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://www.cityofnampa.us/1381/Hazardous-WasteLos-Desechos-Peligrosa" download title="Visit Hazardous Waste Info">
-                        <img src="./assets/img/hazardousMats.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Hazardous Material Removal</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFuelStorageTankPermitApplication.pdf?alt=media&token=a862e8eb-077d-4836-853e-ddb7edb9e77a&_gl=1*1ctlo7n*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDkzNS42MC4wLjA." download title="Hazardous Waste Permit">
-                        <img src="./assets/img/hazardousWaste.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Hazardous Waste Permit</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://www.cityofnampa.us/163/Building-Safety" download title="Visit Developer Guidelines">
-                        <img src="./assets/img/developerInfo.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Developer Information</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3 my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FNFPDFireWatchInfo%26Log.pdf?alt=media&token=b10589f4-e4be-4596-9889-7f44e925d7fb&_gl=1*12uiuwo*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MTEyNy42MC4wLjA." download title="Download Firewatch Info">
-                        <img src="./assets/img/firewatch.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Fire Watch</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="row text-center">
-                      <a class="card col-md-4 p-0 shadow mx-md-3  my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireExtinguisherQuestions.pdf?alt=media&token=96d55a4c-a11a-4468-80e5-d54b28c6a179&_gl=1*13v576k*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDY3NC4yNS4wLjA." download title="Download Fire Extinguisher Information">
-                        <img src="./assets/img/fireExtinguisher.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Fire Extinquisher Inspections</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3  my-3 grow card-width" href="https://www.knoxbox.com" download title="Knox Box Link">
-                        <img src="./assets/img/knoxbox.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Knox Box</p>
-                        </div>
-                      </a>
-                      <a class="card col-md-4 p-0 shadow mx-md-3  my-3 grow card-width" href="https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FEmergency%20Responder%20Radio%20Coverage%20Permit%20Application.pdf?alt=media&token=20d1a888-b723-4ad4-b7d1-26ea3d306c1d" download title="Knox Box Link">
-                        <img src="./assets/img/radio.jpg" class="card-img-top" alt="..." style="height: 30vh;">
-                        <div class="card-body">
-                          <p class="card-text">Emergency Radio Coverage Permit</p>
-                        </div>
-                      </a>
                   </div>
+                  <div class="container">
+                     <div class="row my-4 justify-content-around" id="permit-card-container">
+                        <!-- Buttons will go here -->
+                      </div>
 
-          </div>
-          </div>
-                                <!-- Modal Body -->
-                      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                      <div class="modal fade" id="burnPermitModal" tabindex="1" role="dialog" aria-labelledby="burnPermitModal" aria-hidden="true">
+                      <div id="offcanvas-container">
+                        <!-- Offcanvas components will be appended here -->
+                      </div>
+                      
+                    </div>
+                      
+                    </div>
+                  </div>
+                  <!-- Modal Body -->
+                  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                  <div class="modal fade" id="burnPermitModal" tabindex="1" role="dialog" aria-labelledby="burnPermitModal" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -1790,6 +1682,114 @@ This includes fire pits, BBQ's and ceremonial fires.***<br><br>
   <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
+    const permitCardContainer = document.getElementById('permit-card-container');
+    const offcanvasContainer = document.getElementById('offcanvas-container');
+    let permits = []
+     fetch('permits.json')
+      .then(res => res.json())
+      .then(data => {data.forEach((item, index) => {
+          permits = data
+          const idSuffix = `offcanvas${index}`;
+
+          // Create the trigger button
+          const permitCard = document.createElement('div');
+          permitCard.setAttribute("data-title", item.Title.toLowerCase());
+          permitCard.setAttribute("data-tags", item.Category.toLowerCase())
+         permitCard.className = 'my-4 col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch text-center';
+          // Build the inner card separately
+          const cardInner = document.createElement('div');
+          cardInner.className = 'card p-3 shadow hover-shadow h-100 w-100';
+          cardInner.style.cursor = 'pointer';
+          cardInner.innerHTML = `
+            <p class="mb-0">
+              <strong>${item.Title}</strong><br>
+              ${item.Description}
+            </p>
+          `;
+
+          // Make the inner card open the file link
+          cardInner.addEventListener('click', () => {
+            if (item.File) {
+              window.open(item.File, '_blank');
+            }
+          });
+
+          // Append inner card to outer permitCard
+          permitCard.appendChild(cardInner);
+              
+              permitCard.addEventListener('click', () => {
+                if (item.File) {
+                  window.open(item.File, '_blank');
+                }
+              });
+              
+              permitCardContainer.appendChild(permitCard);
+
+          // permitCard.addEventListener('click', () => {
+          //   console.log("click")
+          //   const target = document.getElementById(idSuffix)
+          //   if(target) {
+          //     const oc = new bootstrap.Offcanvas(target)
+          //     oc.show()
+          //   } else {
+          //     console.warn(`offcanvas #${idSuffix} not found in DOM.`)
+          //   }
+          // })
+
+          
+
+
+          // Create the offcanvas component
+          const offcanvas = document.createElement('div');
+          offcanvas.className = 'offcanvas offcanvas-end w-100';
+          offcanvas.tabIndex = -1;
+          offcanvas.id = idSuffix;
+          offcanvas.setAttribute('aria-labelledby', `${idSuffix}-label`);
+
+          offcanvas.innerHTML = `
+            <div class="offcanvas-header">
+              <h5 id="${idSuffix}-label">${item.Title}</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              ${item.Description}
+            </div>
+          `;
+
+          offcanvasContainer.appendChild(offcanvas);
+        });})
+
+         const searchInput = document.getElementById("permitSearch");
+          const filterSelect = document.getElementById("permitFilter");
+
+          function normalize(text) {
+            return text.toLowerCase();
+          }
+
+         function filterPermits() {
+  const search = normalize(searchInput.value);
+  const filter = normalize(filterSelect.value);
+
+  const permitCards = permitCardContainer.children;
+
+  for (let card of permitCards) {
+    const title = card.getAttribute("data-title") || "";
+    const tags = card.getAttribute("data-tags") || "";
+
+    const matchesSearch = title.includes(search);
+    const matchesFilter = filter === "" || tags.includes(filter);
+
+    // Force hiding/showing with Bootstrap layout in mind
+    if (matchesSearch && matchesFilter) {
+      card.classList.remove("d-none");
+    } else {
+      card.classList.add("d-none");
+    }
+  }
+}
+
+  searchInput.addEventListener("input", filterPermits);
+  filterSelect.addEventListener("change", filterPermits);
      function sendEmail(receivingEmail){
         Email.send({
           SecureToken: "06a03290-8da1-4d6f-8333-4fa072837509",

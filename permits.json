@@ -1,0 +1,176 @@
+[
+  {
+    "Title": "Fire Sprinkler Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFire%20Sprinkler%20Permit%20Application.pdf?alt=media&token=bdd74d03-2724-4208-a42a-76b22d36036e",
+    "Description": "Required for the installation or modification of fire sprinkler systems to ensure compliance with safety standards.",
+    "Category": "Alarm"
+  },
+  {
+    "Title": "Fire Alarm Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireAlarmPermitApplication.pdf?alt=media&token=56d40e18-a43c-44dc-9829-f1ef6c68a7f1&_gl=1*1dae052*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDY1Ny40Mi4wLjA.",
+    "Description": "Needed for installing, altering, or repairing fire alarm systems to maintain fire safety and code compliance.",
+    "Category": "Alarm"
+  },
+  {
+    "Title": "Commercial Hood Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FCookingHoodFireExtinguishingSystem.pdf?alt=media&token=384f22d0-fc87-417f-bf4a-ed6d2bb31db4&_gl=1*fsy7wj*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDU3MS42MC4wLjA.",
+    "Description": "Required for installation or maintenance of commercial kitchen fire suppression systems to prevent grease fires.",
+    "Category": "Food"
+  },
+  {
+    "Title": "Fire Alarm Communicator",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireAlarmCommunicatorReplacementApplication.pdf?alt=media&token=f97bf063-031d-44f1-8592-4864bf3a980a&_gl=1*mjzkgm*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDYzOS42MC4wLjA.",
+    "Description": "Permit for replacement or installation of fire alarm communicators that transmit signals to emergency responders.",
+    "Category": "Alarm"
+  },
+  {
+    "Title": "Day Care Inspections",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FDaycareInformationf%26Requirements.pdf?alt=media&token=ae6d256e-b425-4c1d-9619-97e56d0ce897&_gl=1*38wcwr*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDYxNy4xNC4wLjA.",
+    "Description": "Inspection requirements to ensure daycare facilities comply with fire safety regulations.",
+    "Category": "Inspection"
+  },
+  {
+    "Title": "Firework Stand Permits",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFirework%20Stand%20Instructions%20and%20Application.pdf?alt=media&token=279e3f19-47af-4a81-879f-b2e3f7c3ff19",
+    "Description": "For temporary firework stands.",
+    "Category": "Firework"
+  },
+  {
+    "Title": "Pyrotechnics Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAerialPyrotechnicsPermit.pdf?alt=media&token=2c7cb1b7-b68d-46c4-b683-b9638cff6281&_gl=1*170jk1h*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDM4NC40My4wLjA.",
+    "Description": "Authorization for the use of aerial or special pyrotechnics in public displays or events.",
+    "Category": "Firework"
+  },
+  {
+    "Title": "Food Truck Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFoodTruckapplicationswithInstructions(1).pdf?alt=media&token=836aef43-3b8d-4f0f-83e1-51aec48de0fe&_gl=1*1d1zis*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDgyMi4zMS4wLjA.",
+    "Description": "Permit required for operating mobile food vending units, ensuring compliance with fire and health codes.",
+    "Category": "Food"
+  },
+  {
+    "Title": "Temporary Structure Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FTemporary%20Structure%20Permit.pdf?alt=media&token=c97fecd2-32dc-41a2-ac05-f1aac3f85344",
+    "Description": "For temporary tents greater than 400sq/ft and canopies greater than 700sq/ft placed for 180 days or less.",
+    "Category": "Event"
+  },
+  {
+    "Title": "Special Burn and Bonfire Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FSpecial%20Burn%20and%20Bonfire%20Permit.pdf?alt=media&token=1643d248-86cb-4eca-aa3b-429331c2484c",
+    "Description": "For open burning and recreational fires not located in an enclosed 2'x3' fire pit.",
+    "Category": "Burn"
+  },
+  {
+    "Title": "Hydrant Flow Request",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FHydrantFlowRequest.pdf?alt=media&token=97edc2b2-38e5-42b2-8dcc-c32c3465c07b&_gl=1*9j00ge*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDk1MS40NC4wLjA.",
+    "Description": "Application to test and document water flow from fire hydrants for fire protection planning.",
+    "Category": "Water"
+  },
+  {
+    "Title": "Residential Access Water Supply",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAccess%20and%20Water%20Supply%20Instructions%20and%20Application.pdf?alt=media&token=dafd44ac-e125-4f2a-abff-d91b0024e7a9",
+    "Description": "For new and residential additions that involve living space",
+    "Category": "Water"
+  },
+  {
+    "Title": "Smoke Alarm Program",
+    "File": "",
+    "Description": "Program and permit details related to smoke alarm installation and maintenance requirements.",
+    "Category": "Alarm"
+  },
+  {
+    "Title": "Hazardous Material Removal",
+    "File": "https://www.cityofnampa.us/1381/Hazardous-WasteLos-Desechos-Peligrosa",
+    "Description": "Guidelines and permits for safe removal and disposal of hazardous materials.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Fuel Storage Tank Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFuel%20Storage%20Tank%20Permit%20Application.pdf?alt=media&token=afa18a20-8397-4552-ae38-8792403873fe",
+    "Description": "For storage of flammable and combustable liquids in containers and tanks.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Developer Information",
+    "File": "https://www.cityofnampa.us/163/Building-Safety",
+    "Description": "Information packet and permit requirements for developers regarding fire safety and building codes.",
+    "Category": "Inspection"
+  },
+  {
+    "Title": "Fire Watch",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FNFPDFireWatchInfo%26Log.pdf?alt=media&token=b10589f4-e4be-4596-9889-7f44e925d7fb&_gl=1*12uiuwo*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MTEyNy42MC4wLjA.",
+    "Description": "Permit for assigning personnel to monitor fire safety during system outages or high-risk activities.",
+    "Category": "Burn"
+  },
+  {
+    "Title": "Fire Extinquisher Inspections",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFireExtinguisherQuestions.pdf?alt=media&token=96d55a4c-a11a-4468-80e5-d54b28c6a179&_gl=1*13v576k*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDY3NC4yNS4wLjA.",
+    "Description": "Schedule and requirements for regular inspection and maintenance of fire extinguishers.",
+    "Category": "Inspection"
+  },
+  {
+    "Title": "Knox Box",
+    "File": "https://www.knoxbox.com",
+    "Description": "Permit and guidelines for installing Knox Boxes to provide emergency access to secured buildings.",
+    "Category": "Equipment"
+  },
+  {
+    "Title": "Emergency Radio Coverage Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FEmergency%20Responder%20Radio%20Coverage%20Permit%20Application.pdf?alt=media&token=20d1a888-b723-4ad4-b7d1-26ea3d306c1d",
+    "Description": "Permit to install or modify radio coverage systems that enhance emergency responder communication.",
+    "Category": "Communication"
+  },
+  {
+    "Title": "Battery Systems permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FBattery%20Systems%20Permit.pdf?alt=media&token=06f16b19-4a78-4b92-be6b-d1bc3d99cd2e",
+    "Description": "For the installation of a stationary battery system regulated by Section 1206 of the 2018 IFC.",
+    "Category": "Equipment"
+  },
+  {
+    "Title": "Compressed Gases Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FCompressed%20Gases%20Permit.pdf?alt=media&token=7b5d1d89-f93e-4523-847e-2f4f79bb6051",
+    "Description": "For storage, use, or handling of compressed gasses in excess of the amounts listed in Table 105.6.8 of 2018 IFC.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Exhibits and Trade Show Permits",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FExhibits%20and%20Trade%20Show%20Permit.pdf?alt=media&token=b0e7d4d6-f15b-4376-8331-fcff87576de3",
+    "Description": "Associated with assembly of the public for events indoor and outdoor.",
+    "Category": "Event"
+  },
+  {
+    "Title": "Explosives Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FExplosives%20Permit.pdf?alt=media&token=c275643e-d776-48df-9776-bd7aaae98eb6",
+    "Description": "For manufacturing, storage, handling, sale, or use of any quantity of explosives or explosive material.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Fire Operational Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFire%20Operational%20Permit.pdf?alt=media&token=5b868da6-d090-492d-a4b7-8eda93748195",
+    "Description": "Any operational permit listed in the 2018 IFC that does not have its own application.",
+    "Category": "Burn"
+  },
+  {
+    "Title": "High Piled Combustible Storage Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FHigh%20Piled%20Combustible%20Storage%20Permit.pdf?alt=media&token=742c973e-945b-43a9-b18b-1decd3001dea",
+    "Description": "Use of a building or portion thereof with more than 500 square feet, includign aisles, of high piled storage.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Liquified Petroleum Gas Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FLiquified%20Petroleum%20Gas%20Permit.pdf?alt=media&token=778dbab3-56a8-4021-9103-982b0af59dd5",
+    "Description": "For storage and use of LP gas.",
+    "Category": "Hazardous"
+  },
+  {
+    "Title": "Places of Assembly Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FPlaces%20of%20Assembly%20Permit.pdf?alt=media&token=b06f2a28-98e4-4d18-bdf6-4915549453bb",
+    "Description": "For all assembly occupancies.",
+    "Category": "Event"
+  },
+  {
+    "Title": "Refrigeration Equiment Permit",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FRefrigeration%20Equipment%20Permit.pdf?alt=media&token=3226ff52-1bfb-4821-87b2-eb5459f337ab",
+    "Description": "For operation of a mechanical refrigeration unit or system regulated by Chapter 6 of the 2018 IFC.",
+    "Category": "Equipment"
+  }
+]
