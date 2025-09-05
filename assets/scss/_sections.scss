@@ -54,14 +54,12 @@ section {
       font-size: 38px;
     }
   }
-
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
-
   .content {
     padding-left: 30px;
 
@@ -81,26 +79,23 @@ section {
         font-size: 20px;
         font-weight: 700;
         margin: 5px 0 10px 60px;
-
       }
-    
+
       i {
         font-size: 48px;
         float: left;
         color: $primary;
       }
-    
+
       p {
         font-size: 15px;
         color: lighten($default, 25);
         margin-left: 60px;
       }
-      
     }
-  
   }
 
-  .image  {
+  .image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +119,6 @@ section {
       }
     }
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -160,7 +154,6 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features {
-
   .card {
     border-radius: 5px;
     overflow: hidden;
@@ -203,7 +196,7 @@ section {
   }
 
   .card:hover {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     background: $white;
     .card-title a {
       color: $primary;
@@ -213,14 +206,14 @@ section {
   @media (max-width: 1024px) {
     background-attachment: scroll;
   }
-
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0 ,0 , .8)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 
@@ -257,7 +250,6 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-
   padding-bottom: 30px;
 
   .icon-box {
@@ -282,14 +274,13 @@ section {
         color: $secondary;
         transition: 0.3s;
       }
-
     }
 
     .icon-box:hover h4 a {
       color: $primary;
     }
 
-    p{
+    p {
       margin-left: 70px;
       line-height: 24px;
       font-size: 14px;
@@ -301,16 +292,15 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-
   .portfolio-item {
     margin-bottom: 30px;
   }
 
   #portfolio-flters {
-    padding:0;
-    margin:0 auto 35px auto;
-    list-style:none;
-    text-align:center;
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
     border-radius: 50px;
     padding: 2px 15px;
 
@@ -325,7 +315,8 @@ section {
       color: $default;
       transition: all 0.3s ease-in-out;
 
-      &:hover, &.filter-active {
+      &:hover,
+      &.filter-active {
         color: $primary;
       }
 
@@ -340,11 +331,11 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    
+
     $portfolio_wrap_spacing: 30px;
     &::before {
       content: "";
-      background: rgba(0,0,0, 0.6);
+      background: rgba(0, 0, 0, 0.6);
       position: absolute;
       left: $portfolio_wrap_spacing;
       right: $portfolio_wrap_spacing;
@@ -376,7 +367,6 @@ section {
         font-size: 14px;
         text-transform: uppercase;
       }
-      
     }
 
     .portfolio-links {
@@ -400,7 +390,6 @@ section {
           color: $primary;
         }
       }
-
     }
 
     &:hover {
@@ -421,7 +410,6 @@ section {
         opacity: 1;
         bottom: calc(50% - 50px);
       }
-      
     }
   }
 }
@@ -430,7 +418,6 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-
   padding-top: 40px;
 
   .portfolio-details-slider {
@@ -453,7 +440,6 @@ section {
         background-color: $primary;
       }
     }
-
   }
 
   .portfolio-info {
@@ -473,16 +459,15 @@ section {
       padding: 0;
       font-size: 15px;
 
-      li +li {
+      li + li {
         margin-top: 10px;
       }
     }
-    
   }
 
   .portfolio-description {
     padding-top: 30px;
-    
+
     h2 {
       font-size: 26px;
       font-weight: 700;
@@ -493,7 +478,6 @@ section {
       padding: 0;
     }
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -520,7 +504,8 @@ section {
     margin-bottom: 40px;
   }
 
-  .testimonials-carousel, .testimonials-slider {
+  .testimonials-carousel,
+  .testimonials-slider {
     overflow: hidden;
   }
 
@@ -531,7 +516,7 @@ section {
     .testimonial-img {
       width: 100px;
       border-radius: 50%;
-      border: 6px solid rgba($white, .15);
+      border: 6px solid rgba($white, 0.15);
       margin: 0 auto;
     }
 
@@ -548,8 +533,9 @@ section {
       margin: 0 0 15px 0;
     }
 
-    .quote-icon-left, .quote-icon-right {
-      color: rgba($white, .4);
+    .quote-icon-left,
+    .quote-icon-right {
+      color: rgba($white, 0.4);
       font-size: 26px;
     }
 
@@ -563,7 +549,7 @@ section {
       display: inline-block;
       right: -5px;
       position: relative;
-      top:10px;
+      top: 10px;
     }
 
     p {
@@ -571,20 +557,19 @@ section {
       margin: 0 auto 15px auto;
       color: #eee;
     }
-
   }
 
   .swiper-pagination {
     margin-top: 20px;
     position: relative;
-  
+
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
-      background-color: rgba(#fff, .5);
+      background-color: rgba(#fff, 0.5);
       opacity: 1;
     }
-  
+
     .swiper-pagination-bullet-active {
       background-color: $primary;
     }
@@ -597,9 +582,8 @@ section {
   @media (min-width: 992px) {
     .testimonial-item p {
       width: 80%;
-    } 
+    }
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -638,14 +622,13 @@ section {
         font-size: 18px;
         color: #fff;
       }
-  
+
       span {
         font-style: italic;
         display: block;
         font-size: 13px;
         color: #fff;
       }
-
     }
 
     .social {
@@ -664,7 +647,6 @@ section {
         &:hover {
           color: $primary;
         }
-
       }
 
       i {
@@ -675,14 +657,26 @@ section {
 
     &:hover {
       .member-info {
-        background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 20%, rgba(0,212,255,0) 100%);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.9) 0%,
+          rgba(0, 0, 0, 0.8) 20%,
+          rgba(0, 212, 255, 0) 100%
+        );
         opacity: 1;
-        transition:  0.4s;
+        transition: 0.4s;
       }
 
       .member-info-content {
         bottom: 60px;
         transition: bottom 0.4s;
+      }
+      .member img {
+        width: 100%;
+        height: 300px !important; /* or whatever consistent height looks best */
+        object-fit: cover;
+        object-position: center; /* keeps faces centered */
+        border-radius: 8px; /* optional for consistent rounded look */
       }
 
       .social {
@@ -690,7 +684,6 @@ section {
         transition: bottom ease-in-out 0.4s;
       }
     }
-
   }
 }
 
@@ -698,7 +691,6 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing {
-
   .row {
     padding-top: 40px;
   }
@@ -782,7 +774,13 @@ section {
     margin: -30px -5px 0 -5px;
     background: $primary;
 
-    h3, h4, h4 span, ul, ul .na, ul i, ul .na i {
+    h3,
+    h4,
+    h4 span,
+    ul,
+    ul .na,
+    ul i,
+    ul .na i {
       color: $white;
     }
 
@@ -799,31 +797,29 @@ section {
   @media (max-width: 992px) {
     .box {
       max-width: 60%;
-      margin: 0 auto 30px auto
+      margin: 0 auto 30px auto;
     }
   }
 
   @media (max-width: 767px) {
     .box {
       max-width: 80%;
-      margin: 0 auto 30px auto
+      margin: 0 auto 30px auto;
     }
   }
 
   @media (max-width: 420px) {
     .box {
       max-width: 100%;
-      margin: 0 auto 30px auto
+      margin: 0 auto 30px auto;
     }
   }
-
 }
 
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
-.faq  {
-
+.faq {
   background: lighten($primary, 46);
   padding: 60px 0;
 
@@ -869,7 +865,8 @@ section {
       color: lighten($primary, 25);
     }
 
-    .icon-show, .icon-close {
+    .icon-show,
+    .icon-close {
       font-size: 24px;
       position: absolute;
       right: 0;
@@ -884,7 +881,6 @@ section {
     .icon-show {
       display: none;
     }
-
 
     a.collapsed {
       color: $black;
@@ -913,7 +909,6 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact {
-
   .info-box {
     color: $default;
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
@@ -941,14 +936,12 @@ section {
       font-size: 14px;
       margin: 0 0 0 68px;
     }
-
   }
 
   .php-email-form {
-
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 30px;
-    
+
     .error-message {
       display: none;
       color: #fff;
@@ -960,7 +953,7 @@ section {
         margin-top: 25px;
       }
     }
-    
+
     .sent-message {
       display: none;
       color: #fff;
@@ -969,13 +962,13 @@ section {
       padding: 15px;
       font-weight: 600;
     }
-  
+
     .loading {
       display: none;
       background: #fff;
       text-align: center;
       padding: 15px;
-  
+
       &:before {
         content: "";
         display: inline-block;
@@ -987,10 +980,10 @@ section {
         border-top-color: #eee;
         animation: animate-loading 1s linear infinite;
       }
-  
     }
 
-    input, textarea {
+    input,
+    textarea {
       border-radius: 0;
       box-shadow: none;
       font-size: 14px;
@@ -1018,12 +1011,15 @@ section {
         background: darken($primary, 5);
       }
     }
-  
   }
-  
+
   @keyframes animate-loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -1066,15 +1062,13 @@ section {
   @media (max-width: 768px) {
     .d-flex {
       display: block !important;
-
     }
-    
+
     ol {
       display: block;
       li {
         display: inline-block;
       }
-      
     }
   }
 }

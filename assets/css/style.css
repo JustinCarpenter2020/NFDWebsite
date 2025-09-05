@@ -395,6 +395,14 @@ h6 {
   right: 0;
 }
 
+.member img {
+  width: 100%;
+  height: 300px !important; /* or whatever consistent height looks best */
+  object-fit: cover;
+  object-position: center; /* keeps faces centered */
+  border-radius: 8px; /* optional for consistent rounded look */
+}
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;

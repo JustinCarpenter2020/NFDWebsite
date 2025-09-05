@@ -43,7 +43,13 @@
   },
   {
     "Title": "Food Truck Permit",
-    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFoodTruckapplicationswithInstructions(1).pdf?alt=media&token=836aef43-3b8d-4f0f-83e1-51aec48de0fe&_gl=1*1d1zis*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MDgyMi4zMS4wLjA.",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFood%20Truck%202025.pdf?alt=media&token=63f7b007-f917-457a-8271-56270089f9ff",
+    "Description": "Permit required for operating mobile food vending units, ensuring compliance with fire and health codes.",
+    "Category": "Food"
+  },
+  {
+    "Title": "Food Truck Permit Spanish - Permiso de camión de comida en español",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FFood%20Truck%202025%20Spanish.pdf?alt=media&token=f86b116f-a17a-4f44-b8da-69270528ba28",
     "Description": "Permit required for operating mobile food vending units, ensuring compliance with fire and health codes.",
     "Category": "Food"
   },
@@ -67,7 +73,7 @@
   },
   {
     "Title": "Residential Access Water Supply",
-    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAccess%20and%20Water%20Supply%20Instructions%20and%20Application.pdf?alt=media&token=dafd44ac-e125-4f2a-abff-d91b0024e7a9",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FAccess%20and%20Water%20Supply%20Instructions%20and%20Application.pdf?alt=media&token=5ce668e6-defc-4fc8-ab60-d20633529884",
     "Description": "For new and residential additions that involve living space",
     "Category": "Water"
   },
@@ -97,7 +103,7 @@
   },
   {
     "Title": "Fire Watch",
-    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FNFPDFireWatchInfo%26Log.pdf?alt=media&token=b10589f4-e4be-4596-9889-7f44e925d7fb&_gl=1*12uiuwo*_ga*MTU2ODI5MDkyMC4xNjk4MTY1MjEz*_ga_CW55HF8NVT*MTY5ODE3NjM5NC4zLjEuMTY5ODE4MTEyNy42MC4wLjA.",
+    "File": "https://firebasestorage.googleapis.com/v0/b/nfpd-3c1fe.appspot.com/o/pdfs%2FNFPD%20Fire%20Watch%20Info%20%26%20Log.pdf?alt=media&token=2121598e-f9b9-49ed-b0c5-9279b0d0878f",
     "Description": "Permit for assigning personnel to monitor fire safety during system outages or high-risk activities.",
     "Category": "Burn"
   },
