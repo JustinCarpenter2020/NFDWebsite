@@ -111,6 +111,7 @@
     select("#navbar").classList.toggle("navbar-mobile");
     this.classList.toggle("bi-list");
     this.classList.toggle("bi-x");
+    this.setAttribute("aria-expanded", this.classList.contains("bi-x") ? "true" : "false");
   });
 
   /**
@@ -142,8 +143,9 @@
         if (navbar.classList.contains("navbar-mobile")) {
           navbar.classList.remove("navbar-mobile");
           let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
+          navbarToggle.classList.add("bi-list");
+          navbarToggle.classList.remove("bi-x");
+          navbarToggle.setAttribute("aria-expanded", "false");
         }
         scrollto(this.hash);
       }
@@ -163,83 +165,6 @@
   });
 
   /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
-        layoutMode: "fitRows",
-      });
-
-      let portfolioFilters = select("#portfolio-flters li", true);
-
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
-
-          portfolioIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
-    }
-  });
-
-  /**
-   * Initiate portfolio lightbox
-   */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper(".portfolio-details-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper(".testimonials-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener("load", () => {
@@ -251,29 +176,3 @@
     });
   });
 })();
-
-let emails = [
-  { name: "Ron", email: "johnsonrl@nampafire.org" },
-  { name: "Rob", email: "johnsonre@nampafire.org" },
-  { name: "Mark", email: "stromm@nampafire.org" },
-  { name: "Melissa", email: "closem@nampafire.org" },
-  { name: "Elijah", email: "effingere@nampafire.org" },
-];
-
-let currentEmail = null;
-
-function setEmail(name) {
-  currentEmail = emails.find((e) => e.name === name);
-  document.getElementById("receiverName").innerHTML = "Contact " + name;
-}
-
-function getBase64(file) {
-  var reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onload = function () {
-    return reader.result;
-  };
-  reader.onerror = function (error) {
-    console.log("Error: ", error);
-  };
-}
